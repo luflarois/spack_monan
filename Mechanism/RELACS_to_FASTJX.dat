@@ -1,0 +1,26 @@
+# Convert from RACM to FASTJX
+#-----------------------------------------------------------------------------
+#reaction! number ! factor  ! name    ! factor  ! name    ! factor  ! name
+#        !of terms!         ! fastjx  ! 	! fastjx  !	    ! fastjx
+#-----------------------------------------------------------------------------
+1        1          1.       NO2
+2        1          1.       O3(1D)
+3        1          1.       O3
+4        1          1.       HNO2
+5        1          1.       HNO3
+6        1          1.       HNO4
+7        1          0.1      NO3
+8        1          0.9      NO3
+9        1          1.       H2O2
+10       1          1.       H2COb
+11       1          1.       H2COa
+12       1          1.       ActAld 
+13       1          1.       CH3OOH
+14       1          1.       CH3OOH
+15       1          0.28     H2O2
+16       3          0.5      Acet-a    0.5	Acet-b  0.5  MEKeto
+17       1          1.       Glyxlb
+ 
+ 
+ 
+ 

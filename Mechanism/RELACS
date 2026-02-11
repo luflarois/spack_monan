@@ -1,0 +1,797 @@
+!%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+!% File for gas-phase mechanism RELACS
+!% Based on mechanism RACM as described in 'Development of a reduced chemical scheme 
+!% for use in mesoscale meteorological !% models' Atmospheric Environment 34 (2000) 2633-2644
+!% and with the help provided by the authors
+!% The inorganic chemistry in RACM is retained in its full explicit form within ReLACS
+!% due to the relatively small number of species and reactions
+!%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+! **********************************************************************
+!!  FILE:        RELACS.mch
+!!  DATE:        21.09.2009
+!!  VERSION:     1.0
+!!
+!!  FOR MORE INFORMATION REGARDING THIS MECHANISM CONTACT:
+!!  V. Crassier*, K. Suhre, P. Tulet, R. Rosset
+!!  Laboratoire d'Aerologie UMR CNRS/UPS 5560, 14 av Ed Belin, 31400 Toulouse, 
+!!  FranceFraunhofer Institute for Atmospheric Environmental Research (IFU)
+!!  E-MAIL:      crav@aero.obs-mip.fr
+!!  FAX:         + 33-5-613-32790.
+! **********************************************************************
+!%%%%% NOTES %%%%
+!% Inorganic chemistry from RACM is maintained
+!% Corresponding reactions from RACM are pointed out
+!%
+!% Convenctions taken (only 4 letter allowed)%!
+!% CBOP=CARBOP
+!% CRBO=CARBO
+!% AKAP=ALKAP
+!% AKEP=ALKEP
+! **********************************************************************!
+SET TABULATION 11 DEGREES 0. 10. 20. 30. 40. 50. 60. 70. 78. 86. 90.
+!
+! R1
+!(Equivalent to R1, TUV4)
+NO2 -> O3P + NO
+KINETIC PHOTOLYSIS   0.931026E-02  0.921901E-02  0.890995E-02  0.837928E-02  0.760031E-02  0.652988E-02  0.510803E-02  0.329332E-02  0.174121E-02  0.511393E-03  0.163208E-03
+!
+! R2
+!(Equivalent to R2, TUV2)
+O3              -> O1D + O2
+KINETIC PHOTOLYSIS   0.352348E-04  0.339820E-04  0.301078E-04  0.242445E-04  0.172587E-04  0.102977E-04  0.463950E-05  0.128749E-05  0.290804E-06  0.487557E-07  0.185350E-07
+!
+! R3
+!(Equivalent to R3, TUV3)
+O3              -> O3P + O2
+KINETIC PHOTOLYSIS   0.492758E-03  0.489069E-03  0.476368E-03  0.454585E-03  0.423344E-03  0.381150E-03  0.324899E-03  0.247082E-03  0.160308E-03  0.397670E-04  0.557331E-05
+!
+! R4
+!(Equivalent to R4, TUV12)
+HONO            ->      HO   +       NO
+KINETIC PHOTOLYSIS   0.204671E-02  0.202572E-02  0.195491E-02  0.183337E-02  0.165516E-02  0.141113E-02  0.109002E-02  0.689444E-03  0.361035E-03  0.108950E-03  0.346516E-04
+!
+! R5
+!(Equivalent to R5, TUV13)
+HNO3            ->      HO    +      NO2
+KINETIC PHOTOLYSIS   0.747531E-06  0.729946E-06  0.674094E-06  0.585322E-06  0.470402E-06  0.339698E-06  0.208199E-06  0.964783E-07  0.382903E-07  0.830301E-08  0.224170E-08
+!
+! R6
+!(Equivalent to R6, TUV14)
+HNO4 -> 0.65 HO2 + 0.65 NO2 + 0.35  HO + 0.35 NO3
+KINETIC PHOTOLYSIS   0.503836E-05  0.492337E-05  0.455701E-05  0.397119E-05  0.320567E-05  0.232384E-05  0.142322E-05  0.648606E-06  0.246502E-06  0.469613E-07  0.118499E-07
+!
+! R7
+!(Equivalent to R7, TUV5)
+NO3             ->      NO     +     O2
+KINETIC PHOTOLYSIS   0.265649E-01  0.264102E-01  0.258524E-01  0.249074E-01  0.235172E-01  0.215841E-01  0.188522E-01  0.147419E-01  0.971212E-02  0.225719E-02  0.250693E-03
+!
+! R8
+!(Equivalent to R8, TUV6)
+NO3             ->      NO2    +     O3P
+KINETIC PHOTOLYSIS   0.212996      0.211689      0.207152      0.199076      0.187348      0.170929      0.147742      0.113042      0.718608E-01  0.162667E-01  0.252856E-02
+!
+! R9
+!(Equivalent to R9, TUV11)
+H2O2            ->      HO    +      HO
+KINETIC PHOTOLYSIS   0.839458E-05  0.825592E-05  0.780494E-05  0.706032E-05  0.603528E-05  0.475883E-05  0.329698E-05  0.180604E-05  0.842157E-06  0.221356E-06  0.624535E-07
+!
+! R10
+!(Equivalent to R10, TUV16)
+HCHO            ->      H2   +       CO
+KINETIC PHOTOLYSIS   0.466946E-04  0.460643E-04  0.439841E-04  0.404765E-04  0.354845E-04  0.289656E-04  0.210065E-04  0.121895E-04  0.597941E-05  0.166295E-05  0.476221E-06
+!
+! R11
+!(Equivalent to R11, TUV15)
+HCHO            ->      HO2  +  HO2  +  CO
+KINETIC PHOTOLYSIS   0.322056E-04  0.316290E-04  0.297592E-04  0.266797E-04  0.224649E-04  0.172798E-04  0.114907E-04  0.587024E-05  0.250654E-05  0.553383E-06  0.139443E-06
+!
+! R12
+!(Equivalent to R12, TUV17)
+ALD             ->      MO2  +  HO2  +  CO
+KINETIC PHOTOLYSIS   0.610507E-05  0.595723E-05  0.548715E-05  0.473800E-05  0.376612E-05  0.266260E-05  0.156576E-05  0.668185E-06  0.236179E-06  0.423517E-07  0.111857E-07
+!
+! R13
+!(Equivalent to R13, TUV25)
+OP1             ->      HCHO  +  HO2  +  HO
+KINETIC PHOTOLYSIS   0.570462E-05  0.561354E-05  0.531667E-05  0.482525E-05  0.414587E-05  0.329411E-05  0.230820E-05  0.128524E-05  0.608525E-06  0.163756E-06  0.471643E-07
+!
+! R14 
+!(Lumped => R14+R15)
+OP2             ->      0.96205 ALD + 0.96205 HO2 + 0.03795 MO2 + HO
+KINETIC PHOTOLYSIS   0.570462E-05  0.561354E-05  0.531667E-05  0.482525E-05  0.414587E-05  0.329411E-05  0.230820E-05  0.128524E-05  0.608525E-06  0.163756E-06  0.471643E-07
+!
+! R15 
+!(Equivalent to R16, TUV24)
+KET             ->      1.00000 CBOP  + 1.00000 AKAP
+KINETIC PHOTOLYSIS   0.106563E-05  0.104198E-05  0.966425E-06  0.844984E-06  0.685160E-06  0.499504E-06  0.308206E-06  0.142186E-06  0.551369E-07  0.111617E-07  0.290941E-08
+!
+! R16 
+!(Lumped => R17+R18+R19+R20+R22+R23)
+CRBO -> 0.06517 HCHO + 0.69622 CBOP + 0.75830 HO2 + 0.91924 CO + 0.20842 H2
+KINETIC PHOTOLYSIS   0.278101E-04  0.273762E-04  0.259585E-04  0.236004E-04  0.203173E-04  0.161665E-04  0.113226E-04  0.627890E-05  0.296166E-05  0.784215E-06  0.216505E-06
+!
+! R17 
+!(Equivalent to R21, TUV26)
+ONIT            -> 0.20 ALD  +  0.80 KET  +  HO2 + NO2
+KINETIC PHOTOLYSIS   0.337909E-05  0.330632E-05  0.307366E-05  0.269949E-05  0.220592E-05  0.162928E-05  0.102758E-05  0.491847E-06  0.199146E-06  0.422739E-07  0.108005E-07
+!%
+!%
+!%
+!% END OF PHOTOLYSIS REACTIONS 
+!% (photolysis rate for lumped reactions R14 and R16 are STILL not real )
+!%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+!
+!
+!(Equivalent to R24)
+! R18  (+ O2 as reactionant)
+O3P -> O3
+KINETIC TB O2 SPEC -1
+!
+! R19 (+ 2.0 O2 as product)
+!(Equivalent to R25)
+O3P +  O3 -> 
+KINETIC ARR2    8.00E-12    2060.0
+!
+! R20 (+ N2 as product)
+!(Equivalent to R26)
+O1D       ->      O3P
+KINETIC TB N2 ARR2    1.80E-11     -110.0
+!
+! R21 (+ O2 as product)
+!(Equivalent to R27)
+O1D       ->      O3P
+KINETIC TB O2 ARR2    3.20E-11     -70.0
+!
+! R22 (+ H2O as reaccionant)
+!(Equivalent to R28)
+O1D -> 2. HO
+KINETIC TB H2O ARR2    2.20E-10        0.0
+!
+! R23  (+ O2 as product)
+!(Equivalent to R29)
+O3 +   HO        ->      HO2 
+KINETIC ARR2    1.60E-12      940.0
+!
+! R24 (+ 2.0 O2 as product)
+!(Equivalent to R30)
+O3 +  HO2       ->      HO
+KINETIC ARR2    1.10E-14      500.0
+!
+! R25 (+ H20 + O2 as product)
+!(Equivalent to R31)
+HO +   HO2       ->
+KINETIC ARR2    4.80E-11     -250.0
+!
+! R26 (+ H20 as product)
+!(Equivalent to R32)
+H2O2 + HO        ->      HO2
+KINETIC ARR2    2.90E-12      160.0
+!
+! R27 (O2 as product)
+!(Equivalent to R33)
+HO2 +  HO2       ->      H2O2 
+KINETIC SPEC -2
+!
+! R28 (H2O as reactionant, + O2 + H20 as product)
+!(Equivalent to R34)
+HO2 +  HO2 ->      H2O2  
+KINETIC TB H2O SPEC -3
+!
+! R29
+!(Equivalent to R35)
+O3P +  NO        ->      NO2
+KINETIC TROE4  9.00E-32  1.5   3.00E-11   0.0
+!
+! R30 (+ O2 as product)
+!(Equivalent to R36)
+O3P +  NO2       ->      NO
+KINETIC ARR2    6.50E-12     -120.0
+!
+! R31
+!(Equivalent to R37)
+O3P +  NO2       ->      NO3
+KINETIC TROE4  9.00E-32  2.0  2.20E-11  0.0
+!
+! R32
+!(Equivalent to R38)
+HO +  NO        ->      HONO
+KINETIC TROE4  7.00E-31  2.6   1.50E-11   0.5
+!
+! R33
+!(Equivalent to R39)
+HO +   NO2       ->      HNO3
+KINETIC TROE4  2.60E-30   3.2   2.40E-11   1.3
+!
+! R34
+!(Equivalent to R40)
+HO +   NO3       ->      NO2   +      HO2
+KINETIC ARR1    2.20E-11
+!
+! R35
+!(Equivalent to R41)
+HO2 +  NO        ->      NO2   +      HO
+KINETIC ARR2    3.70E-12     -250.0
+!
+! R36
+!(Equivalent to R42)
+HO2 +  NO2       ->      HNO4
+KINETIC TROE4  1.80E-31   3.2   4.70E-12  1.4
+!
+! R37
+!(Equivalent to R43)
+HNO4            ->      HO2   +      NO2
+KINETIC RCFE 1.80E-31  3.2  4.70E-12  1.4  4.76D26  10900.
+!
+! R38
+!(Equivalent to R44)
+HO2 +  NO3       ->  0.3 HNO3 +   0.7 NO2 +   0.7  HO
+KINETIC ARR1    3.50E-12 
+!
+! R39 (+ H2O as product)
+!(Equivalent to R45)
+HO  +  HONO      ->  NO2
+KINETIC ARR2    1.80E-11     390.0
+!
+! R40 (+ H2O as product)
+!(Equivalent to R46)
+HO +   HNO3      ->      NO3
+KINETIC SPEC -4
+!
+! R41 (+ O2 + H2O as product)
+!(Equivalent to R47)
+HO +   HNO4      ->      NO2   
+KINETIC ARR2    1.30E-12     -380.0
+!
+! R42 (+ O2 as product)
+!(Equivalent to R48)
+O3 +   NO        ->      NO2  
+KINETIC ARR2    2.00E-12     1400.0
+!
+! R43 (+ O2 as product)
+!(Equivalent to R49)
+O3  +  NO2       ->      NO3 
+KINETIC ARR2    1.20E-13     2450.0
+!
+! R44 (+ O2 as reactionant)
+!(Equivalent to R50)
+NO  +  NO  ->      NO2    +     NO2
+KINETIC TB O2 ARR2    3.30E-39     -530.0
+!
+! R45
+!(Equivalent to R51)
+NO3 +  NO        ->      NO2    +     NO2
+KINETIC ARR2    1.50E-11     -170.0
+!
+! R46 (+ O2 as product)
+!(Equivalent to R52)
+NO3 +  NO2       ->      NO    +      NO2 
+KINETIC ARR2    4.50E-14        1260.0
+!
+! R47
+!(Equivalent to R53)
+NO3 +  NO2       ->      N2O5
+KINETIC TROE4   2.20E-30  3.9   1.50E-12   0.7
+!
+! R48
+!(Equivalent to R54)
+N2O5            ->      NO2    +     NO3
+KINETIC RCFE 2.20E-30  3.9  1.50E-12  0.7   3.70D26    11000.0
+!
+! R49 (+ O2 as product)
+!(Equivalent to R55)
+NO3 +  NO3       ->      NO2    +     NO2  
+KINETIC ARR2    8.50E-13    2450.0
+!
+! R50 (+ H2 as reactionant, + H2O as product)
+!(Equivalent to R56)
+HO  ->  HO2
+KINETIC TB H2 ARR2    5.50E-12    2000.0
+!
+! R51
+!(Equivalent to R57)
+HO +   SO2       ->      SULF   +     HO2
+KINETIC TROE4   3.00E-31   3.3    1.50E-12    0.0
+!
+! R52 (BE CAREFUL: CO2 is a product)
+!(Equivalent to R58)
+CO  +  HO        ->      HO2 
+KINETIC SPEC -5
+!%
+!%
+!!!%%%%END OF INORGANIC CHEMISTRY%%%%!!!!!
+!%
+!%
+! R53
+!(Equivalent to R59)
+BIO +  O3P  -> 0.91868 ALKE +   0.05 HCHO + 0.02  HO +  //
+               0.01 CO  +   0.13255 CRBO +  0.28  HO2 + //
+               0.15 XO2
+KINETIC ARR1    6.00E-11
+!
+! R54
+!(Equivalent to R59, doubt in the reaction rate!)
+CRBO + O3P       ->      ALD
+KINETIC ARR2    0.00E-1     -13.0
+!!!!!KINETIC ARR2    1.59E-11     -13.0 
+!
+! R55 (+ H2O as product)
+!(Equivalent to R61)
+CH4 +  HO        ->      MO2 
+KINETIC ARR3    7.44E-18  2.  1361.0
+!
+! R56 (+ H2O as product)
+!(Equivalent to R62)
+ETH +  HO        ->      AKAP
+KINETIC ARR3    1.51E-17  2.  492.0
+!
+! R57 (+ H2O as product) 
+!(Lumped => R63+R64+R65)
+ALKA +  HO  -> 0.87811 AKAP + 0.12793 HO2 + 0.08173 ALD + //
+               0.03498 KET + 0.00835 CRBO + 0.00140 HCHO + //
+               0.00878 ORA1 + .000878 CO + //
+               0.000878 HO
+KINETIC ARRC9    3.76E-12 0 260.0 1.70E-12 155.0 1.21E-12 125.0 0 0
+!%%Modified!!
+!
+! R58 
+!(Lumped => R66+R67+R68+R69)
+ALKE +  HO        -> 1.02529 AKEP +  0.00000 BIOP
+KINETIC ARRC9  1.78E-12 0 -438.0 6.07E-13 -500.0 0.00E-1 -448.0 0 0
+!%%Modified!!
+!
+! R59 
+!(Lumped => R70+R71+R72)
+BIO +  HO        -> 1.00000 BIOP
+KINETIC ARRC9    2.54E-11 0 -410.0 0.00E-1 -440.0 0 0 0.00E-1 0
+!%%Modified!!
+!
+! R60
+!(Lumped => R73+R74+R75)
+ARO +  HO        -> 0.93968 ADD + 0.10318 XO2 + //
+                    0.10318 HO2 + 0.00276 PHO
+KINETIC ARRC9    3.31E-12 0 -355.0 0 0 0 0 3.45E-13 0
+!%%Modified!!
+!
+! R61 (+ H2O as product)
+!(Equivalent to R76)
+HCHO + HO        ->      HO2    +     CO
+KINETIC ARR1    1.00E-11 
+!
+! R62 (+ H2O as product)
+!(Equivalent to R77)
+ALD +  HO        ->      1.00000 CBOP
+KINETIC ARR2    5.55E-12    -331.0
+!
+! R63 (+ H2O as product)
+!(Equivalent to R78)
+KET +  HO        ->      1.00000 CBOP
+KINETIC ARR3    5.68E-18  2.  -92.0
+!
+! R64 (+ H2O as product)
+!(Lumped => R79+R80+R81+R82+R83+R84)
+CRBO +  HO   -> 0.51419 CBOP + 0.16919 CRBO + //
+                 1.01732 CO  + 0.51208 HO2 + 0.00000 HCHO + //
+                 0.06253 ALD + 0.00853 KET + 0.10162 XO2
+!!               + //  0.75196 H2O
+!KINETIC ARRC9    3.31E-12 0 -355.0 0 0 0 0 3.45E-13 0
+KINETIC ARRC9    1.86E-12 0 -175.0 0 0 0 0 1.32E-11 0
+!%%Modified!!
+!
+!
+! R65
+!(Equivalent to R85)
+OP1 +  HO    -> 0.65  MO2 +  0.35  HCHO +  0.35  HO
+KINETIC ARR2    2.93E-12    -190.0
+!
+! R66
+!(Lumped => R86+R87)
+OP2 +  HO    -> 0.40341 AKAP +  0.05413 CBOP + //
+                0.07335 ALD + 0.37591 KET +  0.09333 XO2 + //
+                0.02915 HO2 + 0.02915 HCHO + 0.44925  HO
+KINETIC ARR2    3.36E-12    -190.0
+!
+! R67 (+ H2O as product)
+!(Lumped => R88+R89)
+PAN +  HO    -> 0.57839 HCHO + 0.21863 CRBO + 0.71893 NO3 + //
+                0.28107 PAN + 0.28107 HO2 + XO2
+!!              + // 0.29733 H2O
+KINETIC ARRC9    1.59E-14 0 -500.0 0 0 0 0 3.80E-14 0
+!%%Modified!!
+!
+!
+! R68 (+ H2O as product)
+!(Equivalent to R90)
+ONIT + HO -> 1.00000 AKAP + NO2
+KINETIC ARR2    5.31E-12     260.0
+!
+! R69
+!(Equivalent to R91)
+HCHO + NO3 -> HO2 + HNO3 + CO
+KINETIC ARR2    3.40E-13    1900.0
+!
+! R70
+!(Equivalent to R92)
+ALD + NO3 -> 1.00000 CBOP + HNO3
+KINETIC ARR2    1.40E-12    1900.0
+!
+! R71
+!(Lumped => R93+R94+R95+R96)
+CRBO + NO3 -> 0.91567 HNO3 + 0.38881 CBOP + //
+              0.10530 CRBO + 0.05265 ALD + 0.00632 KET + //
+              0.10530 NO2 + 0.10530 XO2 + 0.63217 HO2 + //
+              1.33723 CO + 0.00000 OLN
+KINETIC ARRC9    1.62E-12 0 1900.0 0.00E-1 150.0 1.94E-14 1000.0 0 0
+!%%Modified!!
+!
+!
+! R72
+!(Equivalent to R97, doubt about the reaction rate which change from 2.2E-11)
+ARO + NO3 -> HNO3 + PHO
+KINETIC ARR1    4.92E-16
+!ANTERIOR KINETIC ARR1    4.20E-11    !!DIFERENT
+!
+! R73
+!(Lumped => R98+R99+R100+R101)
+ALKE + NO3 -> 0.00000 CRBO + 0.93768 OLN
+KINETIC ARRC9    4.35E-18  2. 2282.0 1.91E-14 450.0 1.08E-15 -450.0 0.00E-1 0
+!%%Modified!!
+!
+!
+! R74
+!(Lumped => R102+R103+R104)
+BIO + NO3 -> 0.91741 CRBO + 1.00000 OLN
+KINETIC ARRC9    4.00E-12 0 446.0 0.00E-1 -490.0 0 0 0.00E-1 0
+!%%Modified!!
+!
+!
+! R75
+!(Equivalent to R105, doubt about the reaction rate which change from 2.2E-14)
+PAN + NO3 -> 0.60 ONIT +  0.60 NO3 +  0.40  PAN + //
+                      0.40 HCHO +  0.40 NO2  +  XO2
+KINETIC ARR2    3.76E-16    500.0
+!
+! R76
+!(Lumped => R106+R107+R108+R109)
+ALKE + O3 -> 0.48290 HCHO + 0.51468 ALD + 0.07377 KET + //
+             0.00000 CRBO + 0.35120 CO + 0.15343 ORA1 + //
+             0.08143 ORA2 + 0.23451 HO2 + 0.39435 HO + //
+             0.05705 CBOP + 0.03196 ETH + 0.00000 ALKE + //
+             0.04300 CH4 + 0.13966 MO2 + 0.09815 AKAP + //
+             0.01833 H2O2 + 0.00000 XO2 + 0.05409 H2 + //
+             0.00000 O3P
+KINETIC ARRC9    8.17E-15 0 2580.0 4.32E-16 1800.0 2.87E-17 845.0 0.00E-1 2283.0
+!%%Modified!!
+!
+!
+! R77
+!(Lumped => R110+R111+R112)
+BIO + O3 -> 0.90000 HCHO + 0.00000 ALD + 0.00000 KET + //
+            0.39754 CRBO + 0.36000 CO + 0.37388 ALKE + //
+            0.00000 AKAP + 0.17000 CBOP + 0.03000 MO2 + //
+            0.15000 ORA1 + 0.00000 ORA2 + 0.28000 HO + //
+            0.30000 HO2 + 0.00100 H2O2 + 0.05000 H2 + //
+            0.13000 XO2 + 0.09000 O3P
+KINETIC ARRC9   7.86E-15 0 1913.0 0.00E-1 732.0 0 0 0.00E-1 0
+!%%Modified!!
+!
+!
+! R78
+!(Lumped => R113+R114)
+CRBO + O3 -> 0.00000 HCHO + 1.07583 CRBO + 0.15692 ALD + //
+              0.10788 ORA1 + 0.20595 ORA2 + 0.27460 CBOP + //
+              0.10149 OP2 + 0.64728 CO + 0.28441 HO2 + //
+              0.20595 HO + 0.00000 H2
+KINETIC ARRC9    0.00E-1  0  2112.0 0 0 0 0 1.38E-19 0
+!%%Modified!!
+!
+!
+! R79
+!(Equivalent to R115, doubt about the reaction rate which change from 2.46E-15)
+PAN + O3   -> 0.70 HCHO +  0.30 PAN +  0.70  NO2  + //
+               0.13 CO   +  0.04 H2  +  0.11  ORA1 + //
+               0.08 HO2  +  .036 HO  +  0.70  CBOP
+KINETIC ARR2    7.20E-17    1700.0
+!
+! R80
+!(Equivalent to R116)
+PHO +  NO2 -> 0.10670 ARO + ONIT
+KINETIC ARR1  2.00E-11 
+!
+! R81
+!(Equivalent to R117)
+PHO + HO2 ->  1.06698 ARO
+KINETIC ARR1    1.00E-11   
+!
+! R82
+!(Lumped => R118+R121+R124) 
+ADD + NO2 -> ARO + HONO
+KINETIC ARR1    3.60E-11 
+!
+! R83
+!(Lumped => R119+R122+R125) 
+ADD -> 0.98 AROP +  0.02 ARO +  0.02  HO2
+KINETIC TB O2 ARR2    1.66E-17    -1044.0
+!
+! R84
+!(Lumped => R120+R123+R126) 
+ADD + O3        ->      ARO    +     HO
+KINETIC ARR1    2.80E-11
+!
+! R85
+!(Lumped => R127+R129)
+CBOP + NO2       ->      1.00000 PAN
+KINETIC TROE5   9.70E-29    5.6   9.30E-12   1.5  5.86E-01
+!
+! R86
+!(Lumped => R128+R130)
+PAN             ->      1.00000 CBOP    +    NO2
+KINETIC RCFE 9.70E-29 5.6 9.30E-12  1.5  1.16D28   13954.
+!
+! R87
+!(Equivalent to R131)
+MO2 +  NO        ->      HCHO   +     HO2      +   NO2
+KINETIC ARR2    4.20E-12    -180.0
+!
+! R88
+!(Lumped => R132+R133+R134+R135) 
+AKAP + NO -> 0.33144 ALD + 0.03002 HCHO + 0.54531 KET + //
+              0.03407 CRBO + 0.74265 HO2 + 0.09016 MO2 + //
+              0.08187 AKAP + 0.13007 XO2 + 0.08459 ONIT + //
+              0.91541 NO2
+KINETIC ARR1    4.36E-12
+!
+! R89
+!(Lumped => R136+R137+R138)
+AKEP + NO -> 1.39870 HCHO + 0.42125 ALD + //
+              0.05220 KET + HO2 + NO2
+KINETIC ARR1    6.93E-12
+!
+! R90
+!(Lumped => R139+R140+R141)
+BIOP + NO -> 0.45463 CRBO + 0.60600 HCHO + 0.00000 ALD + //
+             0.00000 KET + 0.37815 ALKE + 0.84700 HO2 + //
+             0.84700 NO2 + 0.15300 ONIT
+KINETIC ARR1    4.00E-12
+!
+! R91
+!(Lumped => R142+R143+R144)
+AROP + NO -> 0.95115 NO2 + 0.95115 HO2 + 2.06993 CRBO + //
+             0.04885 ONIT
+KINETIC ARR1    4.00E-12
+!
+! R92
+!(Lumped => R145+R146+R147)
+CBOP + NO -> 0.78134 MO2 + 0.09532 CBOP + 0.05848 HCHO + //
+               0.07368 ALD + 0.08670 CRBO + 0.12334 HO2 + //
+               0.02563 XO2 + NO2
+KINETIC ARR1    1.22E-11
+!
+! R93
+!(Lumped => R148+R149)
+OLN + NO -> 0.18401 ONIT + 1.81599 NO2 + 0.18401 HO2 + //
+            0.23419 HCHO + 1.01182 ALD + 0.37862 KET
+KINETIC ARR1    4.00E-12
+!
+! R94
+!(Equivalent to R150)
+MO2 + HO2 -> OP1
+KINETIC ARR2    3.80E-13   -800.0
+!
+! R95
+!(Lumped => R151+R152+R153+R154)
+AKAP + HO2 -> 1.00524 OP2
+KINETIC ARRC9    6.16E-14  0 -700.0 1.52E-13 -1300.0 0 0 0 0
+!%%Modified!!
+!
+! R96
+!(Lumped => R155+R156+R157)
+AKEP + HO2 -> 1.00524 OP2
+KINETIC ARR2    1.81E-13   -1300.0
+!
+! R97
+!(Lumped => R158+R159+R160)
+BIOP + HO2 -> 1.00524 OP2
+KINETIC ARRC9    1.28E-13 0 -1300.0 0 0 0 0 0.00E-1 0
+!
+!
+! R98
+!(Lumped => R161+R162+R163)
+AROP + HO2 -> 1.00524 OP2
+KINETIC ARR2    3.75E-13    -980.0
+!
+! R99
+!(Lumped => R164+R165+R166+R167+R168)
+CBOP + HO2 -> 0.80904 OP2 + 0.17307 ORA2 + 0.17307 O3
+KINETIC ARRC9    5.94E-13 0 -550.0 1.99E-16 -2640.0 5.56E-14 -1300.0 0 0 
+!%%Modified!!
+!
+!
+! R100
+!(Lumped => R169+R170)
+OLN + HO2 -> ONIT
+KINETIC ARR2    1.66E-13   -1300.0
+!
+! R101
+!(Equivalent to R171)
+MO2 +  MO2 -> 1.33 HCHO +  0.66 HO2
+KINETIC ARR2    9.10E-14    -416.0
+!
+! R102
+!(Lumped => R172+R173+R174+R175)
+AKAP + MO2 -> 0.80556 HCHO + 0.98383 HO2 + 0.56070 ALD + //
+               0.09673 KET + 0.01390 MO2 + 0.07976 CRBO + //
+               0.13370 XO2 + 0.00385 AKAP
+KINETIC ARRC9  1.03E-14 0 -158.0 6.24E-14 -431.0 1.53E-14 -467.0 4.34E-15 -633.0 
+!%%Modified!!
+! 
+! R103
+!(Lumped => R176+R177+R178)
+AKEP + MO2 -> 1.42894 HCHO + 0.46413 ALD + 0.03814 KET + HO2
+KINETIC ARR2    1.57E-13   -708.0
+! 
+! R104
+!(Lumped => R179+R180+R181)
+BIOP + MO2 -> 0.56064 CRBO + 0.48074 ALKE + 1.00000 HO2 + //
+            1.09000 HCHO + 0.00000 ALD + 0.00000 KET
+KINETIC ARR2    1.36E-13   -708.0
+!
+! R105
+!(Lumped => R182+R183+R184)
+AROP + MO2 -> HCHO + 1.02767 HO2 + 1.99461 CRBO
+KINETIC ARR2    3.56E-14   -708.0
+!
+! R106
+!(Lumped => R185+R186+R187+R188+R189)
+CBOP + MO2 -> 0.95723 HCHO + 0.82998 HO2 + 0.56031 MO2 + //
+                0.13684 ORA2 + 0.05954 CBOP + //
+                0.15387 CRBO + 0.08295 ALD + 0.02212 XO2
+KINETIC ARRC9    1.77E-11 0 440.0 1.48E-16 -2510.0 3.10E-13 -508.0 0 0
+!%%Modified!!
+! 
+!
+! R107
+!(Lumped => R190+R191)
+OLN + MO2 -> 0.88625 HCHO + 0.67560 HO2 + 0.67560 ONIT + //
+             0.41524 ALD + 0.09667 KET + 0.32440 NO2
+KINETIC ARR2     1.12E-13   -708.0
+!
+! R108
+!(Lumped => R192+R193+R194+R195)
+AKAP + CBOP -> 0.71461 ALD + 0.48079 HO2 + 0.51480 MO2 + //
+                  0.49810 ORA2 + 0.18819 KET + 0.07600 HCHO + //
+                  0.00828 AKAP + 0.11306 XO2 + 0.06954 CRBO
+KINETIC ARRC9     4.44E-14 0 -211.0 2.23E-13 -460.0 4.10E-14 -522.0 1.17E-14 -683.0
+!%%Modified!!
+! 
+!
+! R109
+!(Lumped => R196+R197+R198)
+AKEP + CBOP -> 0.68192 HCHO + 0.68374 ALD + 0.50078 HO2 + //
+                  0.50078 MO2 + 0.49922 ORA2 + 0.06579 KET
+KINETIC ARR2     4.36E-13   -765.0
+!
+! R110
+!(Lumped => R199+R200+R201)
+BIOP + CBOP -> 0.78591 CRBO + 0.24463 ALKE + //
+                 0.50600 HO2 + 0.49400 ORA2 + 0.34000 HCHO + //
+                 0.50600 MO2 + 0.00000 ALD + 0.00000 KET
+KINETIC ARR2     7.60E-13   -765.0
+!
+! R111
+!(Lumped => R202+R203+R204)
+AROP + CBOP -> MO2 + HO2 + 1.99455 CRBO
+KINETIC ARR2     3.63E-13   -765.0
+!
+! R112
+!(Lumped => R205+R206+R207)
+CBOP + CBOP -> 1.66702 MO2 + 0.05821 CBOP + //
+                   0.03432 HCHO + 0.10777 CRBO + 0.06969 ALD + //
+                   0.02190 KET + 0.07566 HO2 + 0.01593 XO2 + //
+                   0.09955 ORA2
+KINETIC ARRC9     7.73E-13 0 -530.0 1.70E-13 -565.0 0 0 0 0 
+!%%Modified!!
+! 
+!
+! R113
+!(Lumped => R208+R209)
+OLN + CBOP -> 0.66562 ONIT + 0.51037 MO2 + 0.48963 ORA2 + //
+                0.17599 HO2 + 0.13414 HCHO + 0.42122 ALD + //
+                0.10822 KET + 0.00000 NO2
+KINETIC ARR2     4.85E-13   -765.0
+!
+! R114
+!(Equivalent to R210)
+OLN + OLN      -> 2.00 ONIT  +      HO2
+KINETIC ARR2    4.19E-15   -1000.0
+!
+! R115
+!(Lumped => R211 + R212) Suggested by P. Tulet
+!!(old product yields zero due to OLND concentrations 
+!!were null in the Crassier tests)
+!old ReLACS reaction
+!OLN + OLN      -> .00000 HCHO + .00000 ALD +  .00000  KET  + //
+!                    .00000 HO2  + .00000 NO2 +  0.00000  ONIT
+!211
+!OLN + OLN      -> .202 HCHO + .640 ALD +  .149  KET  + //
+!                    .500 HO2  + .500 NO2 +  1.50  ONIT
+!212
+!OLND + OLND -> .504 HCHO + 1.21 ALD + .285 KET + ONIT + NO2
+!final version, as suggested by Tulet => R211 + R212
+OLN + OLN      -> .353 HCHO + .925 ALD +  .217  KET  + //
+                    .500 HO2  + .750 NO2 +  1.250  ONIT
+KINETIC ARR2    2.48E-14   -1000.0
+! .
+! R116
+!(Equivalent to R213)
+MO2 +  NO3       ->      HCHO  +      HO2  +       NO2
+KINETIC ARR1    1.20E-12  
+! 
+! R117
+!(Lumped => R214+R215+R216+R217)
+AKAP + NO3 -> 0.33743 ALD + 0.81290 HO2 + 0.03142 HCHO + //
+               0.62978 KET + 0.03531 CRBO + 0.09731 MO2 + //
+               0.08994 AKAP + 0.16271 XO2 + NO2
+KINETIC ARR1    1.20E-12
+! 
+! R118
+!(Lumped => R218+R219+R220)
+AKEP + NO3 -> 1.40909 HCHO + 0.43039 ALD + 0.02051 KET + //
+               HO2 + NO2
+KINETIC ARR1    1.20E-12
+! 
+! R119
+!(Lumped => R221+R222+R223)
+BIOP + NO3 -> 0.61160 CRBO + 0.42729 ALKE + 0.68600 HCHO + //
+              0.00000 ALD + 0.00000 KET + HO2 + NO2
+KINETIC ARR1    1.20E-12
+!
+! R120
+!(Lumped => R224+R225+R226)
+AROP + NO3 -> 2.81904 CRBO + HO2 + NO2 
+KINETIC ARR1    1.20E-12
+!
+! R121
+!(Lumped => R227+R228+R229)
+CBOP + NO3 -> 0.91910 MO2 + 0.03175 CBOP + 0.03175 HCHO + //
+                0.03455 CRBO + 0.02936 ALD + 0.04915 HO2 + //
+                0.01021 XO2 + NO2
+KINETIC ARR1    3.48E-12    
+!
+! R122
+!(Lumped => R230+R231)
+OLN + NO3 -> 0.25928 ONIT + 1.74072 NO2 + 0.25928 HO2 + //
+             0.20740 HCHO + 0.91850 ALD + 0.34740 KET
+KINETIC ARR1    1.20E-12    
+!
+! R123
+!(Equivalent to R232)
+XO2 +  HO2       ->      1.00524 OP2
+KINETIC ARR2    1.66E-13   -1300.0
+!
+! R124
+!(Equivalent to R233)
+XO2 +  MO2       ->      HCHO  +      HO2
+KINETIC ARR2    5.99E-15   -1510.0
+!
+! R125
+!(Equivalent to R234, doubt about the reaction rate which change from 3.40E-14 (twice))
+XO2 +  CBOP     ->      MO2
+KINETIC ARR2    1.69E-14   -1560.0
+! 
+! R126
+!(Equivalent to R235)
+XO2 +  XO2       ->
+KINETIC ARR2    7.13E-17   -2950.0
+!
+! R127
+!(Equivalent to R236)
+XO2 +  NO        ->      NO2
+KINETIC ARR1    4.00E-12 
+!
+! R128
+!(Equivalent to R237)
+XO2 +  NO3       ->      NO2
+KINETIC ARR1    1.20E-12 
+! END OF MECHANISM
+END
+

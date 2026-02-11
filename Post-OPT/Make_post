@@ -1,0 +1,2 @@
+ifort -O0 -c ../Application/chem1_list.f90
+ifort -O0  -static -o post.x post.f90

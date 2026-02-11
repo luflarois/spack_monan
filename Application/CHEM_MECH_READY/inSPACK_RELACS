@@ -1,0 +1,11 @@
+-----------------------PHOTOLYSIS RATES (0: fix, 1: FastJ, TUV)-----
+2
+-----------------------INPUT FILES----------------------------
+CHEMICAL MECHANISM
+'../Mechanism/RELACS'
+---------------------------------------------------
+CHEMICAL SPECIES
+'../Mechanism/ciRLCS'
+---------------------------------------------------
+FastJX Correspondence (only for Fast-Jx)
+'../Mechanism/RELACS_to_FASTJX.dat'

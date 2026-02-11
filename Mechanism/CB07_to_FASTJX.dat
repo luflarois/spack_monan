@@ -1,0 +1,20 @@
+# Convert from CB07 to FASTJX
+#-----------------------------------------------------------------------------
+#reaction! number ! factor  ! name    ! factor  ! name    ! factor  ! name
+#        !of terms!         ! fastjx  ! 	! fastjx  !	    ! fastjx
+#-----------------------------------------------------------------------------
+1           1	   1.	      NO2
+2           1	   1.	      O3(1D)
+3           1	   1.	      O3
+4           1	   1.	      HNO2
+5           1	   1.	      HNO3
+6           1	   1.	      HNO4
+7           1	   0.1        NO3
+8           1	   0.9        NO3
+9           1	   1.	      H2O2
+10          1	   1.	      H2COb
+11          1	   1.	      H2COa
+12          1	   1.	      ActAld
+13          1	   1.	      MeAcr
+14          1	   1.	      MGlyxl
+15          1	   1.	      MGlyxl

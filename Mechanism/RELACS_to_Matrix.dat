@@ -1,0 +1,6 @@
+# Convert chemical species from RELACS to Matrix
+#--
+# Matrix number # RELACS Number # Specie
+      01            11            H2SO4
+      02            08            HNO3
+      03             0            NH3

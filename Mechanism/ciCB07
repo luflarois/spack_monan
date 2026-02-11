@@ -1,0 +1,68 @@
+File for chemical species CB2002 (name and molar mass)
+# gaseous species # aqueous species
+36        0
+---Gas-phase----    SR  DD  WD  PS  FT TRANSP HSTAR   F0  DIF UV     DVJ            DHR    AK0       DAK        Matrix  
+NO2           46.    1   1   1   1   0   1   1.20E-2 0.1 1.6 09    0.1470000	    2500.  0.00E+00	  0.    0 
+NO            30.    1   1   1   1   1   1   1.90E-3 0.0 1.3 04    0.1830000	    1400.  0.00E+00	  0.    0 
+O             16.    0   0   0   0   0   0   0.0E+00 0.0 0.0 00    0.2500000	    0.0    0.00E+00	  0.    0  
+O3            48.    0   1   1   1   0   1   1.10E-2 1.0 1.6 02    0.1750000	    2400.  0.00E+00	  0.    0 
+NO3           62.    0   1   1   0   0   1   1.8E+00 0.0 0.0 10    0.1270000	    2000.  0.00E+00	  0.    0 
+O1D           16.    0   0   0   0   0   0   0.00E+0 0.0 0.0 00    0.2500000	    0.     0.00E+00	  0.    0 
+OH            17.    0   1   1   0   0   0   3.00E+1 0.0 0.0 00    0.2430000	    4500.  0.00E+00	  0.    0 
+HO2           33.    0   1   1   0   0   0   5.70E+3 0.0 0.0 00    0.1740000	    5900.  3.50E-05	  0.    0 
+N2O5         108.    0   1   1   0   0   1   1.0E+10 0.0 0.0 11    0.1100000	    3400.  0.00E+00	  0.    0 
+HNO3          63.    0   1   1   1   0   1   2.10E+5 0.0 1.9 13    0.1260000	    8700.  1.54E+01	  0.    2 
+HONO          47.    0   1   1   0   0   1   5.00E+1 0.0 0.0 00    0.1530000	    4900.  7.10E-04	  0.    0 
+PNA           79.    0   1   0   0   0   1   0.0E+00 0.0 0.0 14    0.1129000	    0.0    0.00E+00	  0.    0 
+H2O2          34.    0   1   1   0   0   1   8.30E+4 1.0 1.4 07    0.1710000	    7400.  2.20E-12  -3700.     0 
+CO            28.    1   1   1   1   1   1   9.90E-4 0.0 0.0 00    0.1890000	    1300.  0.00E+00	  0.    0 
+FORM          30.    1   1   0   1   0   1   6.0E+03 0.0 1.3 00    0.1830000	    7190.  0.00E+00	  0.    0 
+ALD2          44.    1   1   0   1   0   1   1.40E+1 0.0 1.6 00    0.1510000	    5600.  0.00E+00	  0.    0 
+C2O3          75.    0   0   0   0   0   1   0.0E+00 0.0 0.0 00    0.1155000	    0.0    0.00E+00	  0.    0 
+XO2           44.    0   0   0   0   0   0   0.0E+00 0.0 0.0 00    0.1507557	    0.     0.00E+00	  0.    0 
+PAN          121.    0   1   1   1   0   1   4.10E+0 0.1 2.6 49    9.0999998E-02    5760.  0.00E+00	  0.    0 
+PAR           14.    1   0   0   1   0   1   3.50E+0 0.1 2.6 49    9.0999998E-02    6500.  0.00E+00	  0.    0 
+XO2N         119.    0   0   0   0   0   0   0.0E+00 0.0 0.0 00    0.0917000	    0.0    0.00E+00	  0.    0 
+ROR           45.    0   0   0   0   0   0   0.0E+00 0.0 0.0 00    0.1491000	    0.0    0.00E+00	  0.    0 
+OLE           28.    1   1   0   1   0   1   0.0E+00 0.0 0.0 00    0.1900000	    0.0    0.00E+00	  0.    0 
+ETH           28.    1   1   1   1   1   1   1.90E-3 0.0 0.0 00    0.1830000	    2300.  0.00E+00	  0.    0 
+TOL           92.    1   1   1   1   1   1   1.50E-1 0.0 0.0 00    0.1040000	    4000.  0.00E+00	  0.    0 
+CRES         108.    1   0   0   1   0   1   0.0E+00 0.0 0.0 00    0.0960000	    0.0    0.00E+00	  0.    0 
+TO2          109.    0   0   0   0   0   0   0.0E+00 0.0 0.0 00    0.0960000	    0.0    0.00E+00	  0.    0 
+OPEN         125.    0   0   0   0   0   1   0.0E+00 0.0 0.0 00    0.0894400	    0.0    0.00E+00	  0.    0 
+CRO          107.    0   0   0   0   0   1   0.0E+00 0.0 0.0 00    0.0967000	    0.0    0.00E+00	  0.    0 
+MGLY          72.    0   1   1   1   0   1   3.20E+4 0.0 0.0 00    0.1180000	    7500.  0.00E+00	  0.    0 
+XYL          106.    1   1   1   1   1   1   1.50E-1 0.0 0.0 00    9.7000003E-02    4000.  0.00E+00	  0.    0 
+ISOP          68.    1   0   0   1   0   1   0.0E+00 0.0 0.0 00    9.2450030E-02    0.     0.00E+00	  0.    0 
+ISPD          70.    0   0   0   1   0   1   0.0E+00 0.0 0.0 00    0.1195000	    0.0    0.00E+00	  0.    0 
+CH4           16.    1   1   1   1   1   1   1.40E-3 0.0 0.0 00    0.2500000	    1600.  0.00E+00	  0.    0 
+MEOH          32.    1   0   0   0   0   1   0.0E+00 0.0 0.0 00    0.1768000	    0.0    0.00E+00	  0.    0 
+ETOH          46.    1   0   0   0   0   1   0.0E+00 0.0 0.0 00    0.1474000	    0.0    0.00E+00	  0.    0 
+                                                                                                                
+                                                                                                                
+! Name and molar mass of the species                                                                            
+! PNA Nitrous acid HNO4: 79                                                                                     
+! FORM Formaldehyde HCHO: 30                                                                                    
+! ALD2 higher aldehyde (based on acetaldehyde): 44 as CH3CHO                                                    
+! C2O3 Acylperoxy radical (based on acetylperoxy):75 as CH3C(O)O2                                               
+! XO2 NO to NO2 conversion: 44 as in RACM                                                                       
+! PAN Peroxyacylnitrate (based on peroxyacethyl nitrate): 121                                                   
+! PAR Paraffin carbon bond (-C): 14 as CH2                                                                      
+! XO2N NO to organic nitrate conversion: 119 as ONIT (C4H9NO3)in RACM                                           
+! ROR secondary alkoxy radical: 45 as C2H5O
+! OLE Olefin carbon bond (C=C): 28 as C2H4
+! ETH Ethene C2H4: 28
+! TOL Toluene and other monoalkyl aromatics C7H8 : 92
+! CRES Cresol and higher molecular weight phenols C7H8O : 108
+! TO2 Toluene-hydroxyl radical adduct C7H8OH : 109
+! OPEN Aromatic ring opening adduct C7H8OOH : 125
+! CRO Methylphenoxy radical C7H7O: 107
+! MGLY Methylglyoxal and other aromatic products : 72 
+! XYL Xylene and other polyalkyl aromatics C8H10 : 106
+! ISOP Isoprene C5H8 : 68
+! ISPD Isoprene product (lumped methacrolein, methyl vinyl ketone etx ..)C4H6O: 70
+! MEOH Methanol CH3OH : 32
+! ETOH Ethanol C2H5OH : 46
+
+
+

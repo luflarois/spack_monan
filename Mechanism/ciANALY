@@ -1,0 +1,6 @@
+File for chemical species CB2002 (name and molar mass)
+# gaseous species # aqueous species
+2        0
+---Gas-phase----    SR  DD  WD  PS  FT TRANSP HSTAR   F0  DIF UV     DVJ            DHR    AK0       DAK
+O3           48.    0   1   1   1   0   1   1.20E-2 0.1 1.6 09    0.1470000	    2500.  0.00E+00	  0. 
+CO           28.    1   1   1   1   1   1   9.90E-4 0.0 0.0 00    0.1890000	    1300.  0.00E+00	  0. 

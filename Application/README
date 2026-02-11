@@ -1,0 +1,12 @@
+To generate spack files for a specific chem. mechanism, execute
+
+1) for RACM
+spack.sh RACM 
+
+
+2) for RACM72A
+spack.sh RACM72A
+ 
+3) for CB07
+spack.sh CB07
+ 

@@ -1,0 +1,70 @@
+!%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+!% File for gas-phase mechanism CB2002 mechanism (Jeffries, Voici, and Sexton 2002)
+!
+! Reference see below:
+! 
+! Updates to the Carbon Bond 4 photochemical mechanism  
+! Greg Yarwood(1), Gary Z. Whitten(2), Sandhya Rao(1),
+! (1) ENVIRON International Corporatio
+! March 2005
+!%
+! Update by Michel Pirre avril 2007
+! reference to NASA 2006 means JPL 2006 evaluation 15i
+! reference to IUPC 2006 means evaluation IUPAC February 2006
+! Reaction numbers in parenthesis refer to the list of reactions in Yarwood et al. 2005
+!
+! **********************************************************************
+! EPA sponsored the development of the Carbon Bond mechanism version IV 
+!(CB4) for use in urban and regional photochemical modeling and Gery et al.
+! (JGR,925-956,1989) published the mechanism.
+!The EPA's Urban Aurshed Model (UAM-IV, Morris and Myers, 1990) has the 
+!first widely used version of CB4 mechanism
+!The next update is in 1996 by Ozone Transport Assessment Group (OTAG)
+!It includes updated PAN scheme (Dodge, 1991) and updated Isoprene chemistry
+! (Whitten et al.,1996) and (Carter,Atmospheric Environment,4275-4290, 1996)
+!CB99 is a first update by the University of North Carolina(Z.Adelman, Thesis)
+!CB2002 is the last update by Jeffries, Voici and Sexton, Report to the
+! US Environmental Protection Agency, December 2002  
+! **********************************************************************
+!Remarks: Michel Pirre (24/04/07)
+! 1- Two channels for the photolysis of HONO is taken into account in CB2002
+!    Just one is taken into account in this scheme. This channel could be added
+!    when Fast-J will be implemented
+! 2- Photolysis of HNO3 and PNA (HNO4) are not taken into account in CB2002
+!     Photolysis of these species are taken into accopunt in this scheme
+! 3- The reactions OH + NO2 --> HOONO and HOONO -> OH + NO2 (NASA 2006)
+!    are not taken into account in CB2002 nor in this scheme
+!    but they are perepared and they maybe added (R31bis and R31ter). In this case 
+!    HOONO must be added in the species list
+! 4- The reaction OH + H2 ->H02 + H2O is not in CB2002 nor in this scheme
+!    but it is prepared and can be added (R51bis) 
+! 5- SO2 and SULF are not included in CB2002 nor in this scheme
+!    Reactions are nevertheless ready to be used if wanted (R51ter)
+! 6- The reaction CO + OH -> HO2 + CO2 has just one channel in CB2002. It has two channels
+!    in this scheme R52 and R53 (NASA 2006) 
+! 7- OH reaction with methanol (MEOH) and ethanol (ETOH) are not included in CB2002
+!    OH reaction with these species is taken into account in this scheme
+! 8- Organic nitrate RNO3 is not in this scheme. In CB2002 it is only a product
+! 9- Photolysis for ALD2: photolysis for acetaldehyde
+!10- Photolysis for ISPD: photolysis for methacrolein
+!11- Photolysis for OPEN and MGLY: photolysis of methylglyoxcal in this scheme
+!     In CB2002: 6 JHCHO (CO +2 HO2)	
+!**************************************************************************
+!
+SET TABULATION 11 DEGREES 0. 10. 20. 30. 40. 50. 60. 70. 78. 86. 90.
+!
+!  R1 (R8 in CB2002) (O2 as product)
+O3  +  NO2       ->      NO3 
+KINETIC ARR2    1.20E-13     2450.0
+!  --- NASA 2006 
+!  R47 (R13 in CB2002)
+NO3 +  NO2       ->      N2O5
+KINETIC TROE4   2.20E-30  4.3   1.50E-12   0.5
+!  --- NASA 2006 
+!
+!  R48 (R14 in CB2002)
+N2O5            ->      NO2    +     NO3
+KINETIC RCFE 2.20E-30  4.3  1.50E-12  0.5   6.5789474D26    11153.0
+!  --- NASA 2006 
+! END OF MECHANISM
+END

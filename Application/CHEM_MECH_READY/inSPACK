@@ -1,0 +1,11 @@
+-----------------------PHOTOLYSIS RATES (0: fix, 1: FastJ)-----
+0
+-----------------------INPUT FILES----------------------------
+CHEMICAL MECHANISM
+'../Mechanism/RACM'
+---------------------------------------------------
+CHEMICAL SPECIES
+'../Mechanism/ciRA77'
+---------------------------------------------------
+FastJX Correspondence
+'../Mechanism/RACM_to_FASTJX.dat'

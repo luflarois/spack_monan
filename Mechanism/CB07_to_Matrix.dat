@@ -1,0 +1,6 @@
+# Convert chemical species from CB07 to Matrix
+#--
+# Matrix number # CB07 Number # Specie
+      01             0            H2SO4
+      02            10            HNO3
+      03             0            NH3

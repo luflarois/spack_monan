@@ -1,0 +1,1442 @@
+ Laco encontrado Jacc.....
+ Arquivo:chem_spack_fexchem.f90
+ Reading (Fora do laco).....           0
+ Reading (Fora do laco).....           1
+ Reading (Fora do laco).....           2
+ Reading (Fora do laco).....           3
+ Reading (Fora do laco).....           4
+ Reading (Fora do laco).....           5
+ Reading (Fora do laco).....           6
+ Reading (Fora do laco).....           7
+ Reading (Fora do laco).....           8
+ Reading (Fora do laco).....           9
+ Reading (Fora do laco).....          10
+ Reading (Fora do laco).....          11
+ Reading (Fora do laco).....          12
+ Reading (Fora do laco).....          13
+ Reading (Fora do laco).....          14
+ Reading (Fora do laco).....          15
+ Reading (Fora do laco).....          16
+ Reading (Fora do laco).....          17
+ Reading (Fora do laco).....          18
+ Reading (Fora do laco).....          19
+ Reading (Fora do laco).....          20
+ Reading (Fora do laco).....          21
+ Reading (Fora do laco).....          22
+ Reading (Fora do laco).....          23
+ Reading (Fora do laco).....          24
+ Reading (Fora do laco).....          25
+ Reading (Fora do laco).....          26
+ Reading (Fora do laco).....          27
+ Reading (Fora do laco).....          28
+ Reading (Fora do laco).....          29
+ Reading (Fora do laco).....          30
+ Reading (Fora do laco).....          31
+ Reading (Fora do laco).....          32
+ Reading (Fora do laco).....          33
+ Reading (Fora do laco).....          34
+ Reading (Fora do laco).....          35
+ Reading (Fora do laco).....          36
+ Reading (Fora do laco).....          37
+ Reading (Fora do laco).....          38
+ Reading (Fora do laco).....          39
+ Reading (Fora do laco).....          40
+ Reading (Fora do laco).....          41
+ Reading (Fora do laco).....          42
+ Reading (Fora do laco).....          43
+ Reading (Fora do laco).....          44
+ Reading (Fora do laco).....          45
+ Reading (Fora do laco).....          46
+ Reading (Fora do laco).....          47
+ Reading (Fora do laco).....          48
+ Reading (Fora do laco).....          49
+ Reading (Fora do laco).....          50
+ Reading (Fora do laco).....          51
+ Reading (Fora do laco).....          52
+ Reading (Fora do laco).....          53
+ Reading (Fora do laco).....          54
+ Reading (Fora do laco).....          55
+ Reading (Fora do laco).....          56
+ Reading (Fora do laco).....          57
+ Reading (Fora do laco).....          58
+ Reading (Fora do laco).....          59
+ Reading (Fora do laco).....          60
+ Reading (Fora do laco).....          61
+ Reading (Fora do laco).....          62
+ Reading (Fora do laco).....          63
+ Reading (Fora do laco).....          64
+ Reading (Fora do laco).....          65
+ Reading (Fora do laco).....          66
+ Reading (Fora do laco).....          67
+ Reading (Fora do laco).....          68
+ Reading (Fora do laco).....          69
+ Reading (Fora do laco).....          70
+ Reading (Fora do laco).....          71
+ Reading (Fora do laco).....          72
+ Reading (Fora do laco).....          73
+ Laco encontrado.....
+ Reading.....          74
+ Reading.....          75
+ Reading.....          76
+ Reading.....          77
+ Reading.....          78
+ Reading.....          79
+ Reading.....          80
+ Reading.....          81
+ Reading.....          82
+ Reading.....          83
+ Reading.....          84
+ Reading.....          85
+ Reading.....          86
+ Reading.....          87
+ Reading.....          88
+ Reading.....          89
+ Reading.....          90
+ Reading.....          91
+ Reading.....          92
+ Reading.....          93
+ Reading.....          94
+ Reading.....          95
+ Reading.....          96
+ Reading.....          97
+ Reading.....          98
+ Reading.....          99
+ Reading.....         100
+ Reading.....         101
+ Reading.....         102
+ Reading.....         103
+ Reading.....         104
+ Reading.....         105
+ Reading.....         106
+ Reading.....         107
+ Reading.....         108
+ Reading.....         109
+ Reading.....         110
+ Reading.....         111
+ Reading.....         112
+ Reading.....         113
+ Reading.....         114
+ Reading.....         115
+ Reading.....         116
+ Reading.....         117
+ Reading.....         118
+ Reading.....         119
+ Reading.....         120
+ Reading.....         121
+ Reading.....         122
+ Reading.....         123
+ Reading.....         124
+ Reading.....         125
+ Reading.....         126
+ Reading.....         127
+ Reading.....         128
+ Reading.....         129
+ Reading.....         130
+ Reading.....         131
+ Reading.....         132
+ Reading.....         133
+ Reading.....         134
+ Reading.....         135
+ Reading.....         136
+ Reading.....         137
+ Reading.....         138
+ Reading.....         139
+ Reading.....         140
+ Reading.....         141
+ Reading.....         142
+ Reading.....         143
+ Reading.....         144
+ Reading.....         145
+ Reading.....         146
+ Reading.....         147
+ Reading.....         148
+ Reading.....         149
+ Reading.....         150
+ Reading.....         151
+ Reading.....         152
+ Reading.....         153
+ Reading.....         154
+ Reading.....         155
+ Reading.....         156
+ Reading.....         157
+ Reading.....         158
+ Reading.....         159
+ Reading.....         160
+ Reading.....         161
+ Reading.....         162
+ Reading.....         163
+ Reading.....         164
+ Reading.....         165
+ Reading.....         166
+ Reading.....         167
+ Reading.....         168
+ Reading.....         169
+ Reading.....         170
+ Reading.....         171
+ Reading.....         172
+ Reading.....         173
+ Reading.....         174
+ Reading.....         175
+ Reading.....         176
+ Reading.....         177
+ Reading.....         178
+ Reading.....         179
+ Reading.....         180
+ Reading.....         181
+ Reading.....         182
+ Reading.....         183
+ Reading.....         184
+ Reading.....         185
+ Reading.....         186
+ Reading.....         187
+ Reading.....         188
+ Reading.....         189
+ Reading.....         190
+ Reading.....         191
+ Reading.....         192
+ Reading.....         193
+ Reading.....         194
+ Reading.....         195
+ Reading.....         196
+ Reading.....         197
+ Reading.....         198
+ Reading.....         199
+ Reading.....         200
+ Reading.....         201
+ Reading.....         202
+ Reading.....         203
+ Reading.....         204
+ Reading.....         205
+ Reading.....         206
+ Reading.....         207
+ Reading.....         208
+ Reading.....         209
+ Reading.....         210
+ Reading.....         211
+ Reading.....         212
+ Reading.....         213
+ Reading.....         214
+ Reading.....         215
+ Reading.....         216
+ Reading.....         217
+ Reading.....         218
+ Reading.....         219
+ Reading.....         220
+ Reading.....         221
+ Reading.....         222
+ Reading.....         223
+ Reading.....         224
+ Reading.....         225
+ Reading.....         226
+ Reading.....         227
+ Reading.....         228
+ Reading.....         229
+ Reading.....         230
+ Reading.....         231
+ Reading.....         232
+ Reading.....         233
+ Reading.....         234
+ Reading.....         235
+ Reading.....         236
+ Reading.....         237
+ Reading.....         238
+ Reading.....         239
+ Reading.....         240
+ Reading.....         241
+ Reading.....         242
+ Reading.....         243
+ Reading.....         244
+ Reading.....         245
+ Reading.....         246
+ Reading.....         247
+ Reading.....         248
+ Reading.....         249
+ Reading.....         250
+ Reading.....         251
+ Reading.....         252
+ Reading.....         253
+ Reading.....         254
+ Reading.....         255
+ Reading.....         256
+ Reading.....         257
+ Reading.....         258
+ Reading.....         259
+ Reading.....         260
+ Reading.....         261
+ Reading.....         262
+ Reading.....         263
+ Reading.....         264
+ Reading.....         265
+ Reading.....         266
+ Reading.....         267
+ Reading.....         268
+ Reading.....         269
+ Reading.....         270
+ Reading.....         271
+ Reading.....         272
+ Reading.....         273
+ Reading.....         274
+ Reading.....         275
+ Reading.....         276
+ Reading.....         277
+ Reading.....         278
+ Reading.....         279
+ Reading.....         280
+ Reading.....         281
+ Reading.....         282
+ Reading.....         283
+ Reading.....         284
+ Reading.....         285
+ Reading.....         286
+ Reading.....         287
+ Reading.....         288
+ Reading.....         289
+ Reading.....         290
+ Reading.....         291
+ Reading.....         292
+ Reading.....         293
+ Reading.....         294
+ Reading.....         295
+ Reading.....         296
+ Reading.....         297
+ Reading.....         298
+ Reading.....         299
+ Reading.....         300
+ Reading.....         301
+ Reading.....         302
+ Reading.....         303
+ Reading.....         304
+ Reading.....         305
+ Reading.....         306
+ Reading.....         307
+ Reading.....         308
+ Reading.....         309
+ Reading.....         310
+ Reading.....         311
+ Reading.....         312
+ Reading.....         313
+ Reading.....         314
+ Reading.....         315
+ Reading.....         316
+ Reading.....         317
+ Reading.....         318
+ Reading.....         319
+ Reading.....         320
+ Reading.....         321
+ Reading.....         322
+ Reading.....         323
+ Reading.....         324
+ Reading.....         325
+ Reading.....         326
+ Reading.....         327
+ Reading.....         328
+ Reading.....         329
+ Reading.....         330
+ Reading.....         331
+ Reading.....         332
+ Reading.....         333
+ Reading.....         334
+ Reading.....         335
+ Reading.....         336
+ Reading.....         337
+ Reading.....         338
+ Reading.....         339
+ Reading.....         340
+ Reading.....         341
+ Reading.....         342
+ Reading.....         343
+ Reading.....         344
+ Reading.....         345
+ Reading.....         346
+ Reading.....         347
+ Reading.....         348
+ Reading.....         349
+ Reading.....         350
+ Reading.....         351
+ Reading.....         352
+ Reading.....         353
+ Reading.....         354
+ Reading.....         355
+ Reading.....         356
+ Reading.....         357
+ Reading.....         358
+ Reading.....         359
+ Reading.....         360
+ Reading.....         361
+ Reading.....         362
+ Reading.....         363
+ Reading.....         364
+ Reading.....         365
+ Reading.....         366
+ Reading.....         367
+ Reading.....         368
+ Reading.....         369
+ Reading.....         370
+ Reading.....         371
+ Reading.....         372
+ Reading.....         373
+ Reading.....         374
+ Reading.....         375
+ Reading.....         376
+ Reading.....         377
+ Reading.....         378
+ Reading.....         379
+ Reading.....         380
+ Reading.....         381
+ Reading.....         382
+ Reading.....         383
+ Reading.....         384
+ Reading.....         385
+ Reading.....         386
+ Reading.....         387
+ Reading.....         388
+ Reading.....         389
+ Reading.....         390
+ Reading.....         391
+ Reading.....         392
+ Reading.....         393
+ Reading.....         394
+ Reading.....         395
+ Reading.....         396
+ Reading.....         397
+ Reading.....         398
+ Reading.....         399
+ Reading.....         400
+ Reading.....         401
+ Reading.....         402
+ Reading.....         403
+ Reading.....         404
+ Reading.....         405
+ Reading.....         406
+ Reading.....         407
+ Reading.....         408
+ Reading.....         409
+ Reading.....         410
+ Reading.....         411
+ Reading.....         412
+ Reading.....         413
+ Reading.....         414
+ Reading.....         415
+ Reading.....         416
+ Reading.....         417
+ Reading.....         418
+ Reading.....         419
+ Reading.....         420
+ Reading.....         421
+ Reading.....         422
+ Reading.....         423
+ Reading.....         424
+ Reading.....         425
+ Reading.....         426
+ Reading.....         427
+ Reading.....         428
+ Reading.....         429
+ Reading.....         430
+ Reading.....         431
+ Reading.....         432
+ Reading.....         433
+ Reading.....         434
+ Reading.....         435
+ Reading.....         436
+ Reading.....         437
+ Reading.....         438
+ Reading.....         439
+ Reading.....         440
+ Reading.....         441
+ Reading.....         442
+ Reading.....         443
+ Reading.....         444
+ Reading.....         445
+ Reading.....         446
+ Reading.....         447
+ Reading.....         448
+ Reading.....         449
+ Reading.....         450
+ Reading.....         451
+ Reading.....         452
+ Reading.....         453
+ Reading.....         454
+ Reading.....         455
+ Reading.....         456
+ Reading.....         457
+ Reading.....         458
+ Reading.....         459
+ Reading.....         460
+ Reading.....         461
+ Reading.....         462
+ Reading.....         463
+ Reading.....         464
+ Reading.....         465
+ Reading.....         466
+ Reading.....         467
+ Reading.....         468
+ Reading.....         469
+ Reading.....         470
+ Reading.....         471
+ Reading.....         472
+ Reading.....         473
+ Reading.....         474
+ Reading.....         475
+ Reading.....         476
+ Reading.....         477
+ Reading.....         478
+ Reading.....         479
+ Reading.....         480
+ Reading.....         481
+ Reading.....         482
+ Reading.....         483
+ Reading.....         484
+ Reading.....         485
+ Reading.....         486
+ Reading.....         487
+ Reading.....         488
+ Reading.....         489
+ Reading.....         490
+ Reading.....         491
+ Reading.....         492
+ Reading.....         493
+ Reading.....         494
+ Reading.....         495
+ Reading.....         496
+ Reading.....         497
+ Reading.....         498
+ Reading.....         499
+ Reading.....         500
+ Reading.....         501
+ Reading.....         502
+ Reading.....         503
+ Reading.....         504
+ Reading.....         505
+ Reading.....         506
+ Reading.....         507
+ Reading.....         508
+ Reading.....         509
+ Reading.....         510
+ Reading.....         511
+ Reading.....         512
+ Reading.....         513
+ Reading.....         514
+ Reading.....         515
+ Reading.....         516
+ Reading.....         517
+ Reading.....         518
+ Reading.....         519
+ Reading.....         520
+ Reading.....         521
+ Reading.....         522
+ Reading.....         523
+ Reading.....         524
+ Reading.....         525
+ Reading.....         526
+ Reading.....         527
+ Reading.....         528
+ Reading.....         529
+ Reading.....         530
+ Reading.....         531
+ Reading.....         532
+ Reading.....         533
+ Reading.....         534
+ Reading.....         535
+ Reading.....         536
+ Reading.....         537
+ Reading.....         538
+ Reading.....         539
+ Reading.....         540
+ Reading.....         541
+ Reading.....         542
+ Reading.....         543
+ Reading.....         544
+ Reading.....         545
+ Reading.....         546
+ Reading.....         547
+ Reading.....         548
+ Reading.....         549
+ Reading.....         550
+ Reading.....         551
+ Reading.....         552
+ Reading.....         553
+ Reading.....         554
+ Reading.....         555
+ Reading.....         556
+ Reading.....         557
+ Reading.....         558
+ Reading.....         559
+ Reading.....         560
+ Reading.....         561
+ Reading.....         562
+ Reading.....         563
+ Reading.....         564
+ Reading.....         565
+ Reading.....         566
+ Reading.....         567
+ Reading.....         568
+ Reading.....         569
+ Reading.....         570
+ Reading.....         571
+ Reading.....         572
+ Reading.....         573
+ Reading.....         574
+ Reading.....         575
+ Reading.....         576
+ Reading.....         577
+ Reading.....         578
+ Reading.....         579
+ Reading.....         580
+ Reading.....         581
+ Reading.....         582
+ Reading.....         583
+ Reading.....         584
+ Reading.....         585
+ Reading.....         586
+ Reading.....         587
+ Reading.....         588
+ Reading.....         589
+ Reading.....         590
+ Reading.....         591
+ Reading.....         592
+ Reading.....         593
+ Reading.....         594
+ Reading.....         595
+ Reading.....         596
+ Reading.....         597
+ Reading.....         598
+ Reading.....         599
+ Reading.....         600
+ Reading.....         601
+ Reading.....         602
+ Reading.....         603
+ Reading.....         604
+ Reading.....         605
+ Reading.....         606
+ Reading.....         607
+ Reading.....         608
+ Reading.....         609
+ Reading.....         610
+ Reading.....         611
+ Reading.....         612
+ Reading.....         613
+ Reading.....         614
+ Reading.....         615
+ Reading.....         616
+ Reading.....         617
+ Reading.....         618
+ Reading.....         619
+ Reading.....         620
+ Reading.....         621
+ Reading.....         622
+ Reading.....         623
+ Reading.....         624
+ Reading.....         625
+ Reading.....         626
+ Reading.....         627
+ Reading.....         628
+ Reading.....         629
+ Reading.....         630
+ Reading.....         631
+ Reading.....         632
+ Reading.....         633
+ Reading.....         634
+ Reading.....         635
+ Reading.....         636
+ Reading.....         637
+ Reading.....         638
+ Reading.....         639
+ Reading.....         640
+ Reading.....         641
+ Reading.....         642
+ Reading.....         643
+ Reading.....         644
+ Reading.....         645
+ Reading.....         646
+ Reading.....         647
+ Reading.....         648
+ Reading.....         649
+ Reading.....         650
+ Reading.....         651
+ Reading.....         652
+ Reading.....         653
+ Reading.....         654
+ Reading.....         655
+ Reading.....         656
+ Reading.....         657
+ Reading.....         658
+ Reading.....         659
+ Reading.....         660
+ Reading.....         661
+ Reading.....         662
+ Reading.....         663
+ Reading.....         664
+ Reading.....         665
+ Reading.....         666
+ Reading.....         667
+ Reading.....         668
+ Reading.....         669
+ Reading.....         670
+ Reading.....         671
+ Reading.....         672
+ Reading.....         673
+ Reading.....         674
+ Reading.....         675
+ Reading.....         676
+ Encerrando compactacao....
+ Reading (Fora do laco).....         677
+ Reading (Fora do laco).....         678
+ Reading (Fora do laco).....         679
+ Reading (Fora do laco).....         680
+ Reading (Fora do laco).....         681
+ Reading (Fora do laco).....         682
+ Reading (Fora do laco).....         683
+ Reading (Fora do laco).....         684
+ Reading (Fora do laco).....         685
+ Arquivo:chem_spack_fexloss.f90
+ Reading (Fora do laco).....           0
+ Reading (Fora do laco).....           1
+ Reading (Fora do laco).....           2
+ Reading (Fora do laco).....           3
+ Reading (Fora do laco).....           4
+ Reading (Fora do laco).....           5
+ Reading (Fora do laco).....           6
+ Reading (Fora do laco).....           7
+ Reading (Fora do laco).....           8
+ Reading (Fora do laco).....           9
+ Reading (Fora do laco).....          10
+ Reading (Fora do laco).....          11
+ Reading (Fora do laco).....          12
+ Reading (Fora do laco).....          13
+ Reading (Fora do laco).....          14
+ Reading (Fora do laco).....          15
+ Reading (Fora do laco).....          16
+ Reading (Fora do laco).....          17
+ Reading (Fora do laco).....          18
+ Reading (Fora do laco).....          19
+ Reading (Fora do laco).....          20
+ Reading (Fora do laco).....          21
+ Reading (Fora do laco).....          22
+ Reading (Fora do laco).....          23
+ Reading (Fora do laco).....          24
+ Reading (Fora do laco).....          25
+ Reading (Fora do laco).....          26
+ Reading (Fora do laco).....          27
+ Reading (Fora do laco).....          28
+ Reading (Fora do laco).....          29
+ Reading (Fora do laco).....          30
+ Reading (Fora do laco).....          31
+ Reading (Fora do laco).....          32
+ Reading (Fora do laco).....          33
+ Reading (Fora do laco).....          34
+ Reading (Fora do laco).....          35
+ Reading (Fora do laco).....          36
+ Reading (Fora do laco).....          37
+ Reading (Fora do laco).....          38
+ Reading (Fora do laco).....          39
+ Reading (Fora do laco).....          40
+ Reading (Fora do laco).....          41
+ Reading (Fora do laco).....          42
+ Reading (Fora do laco).....          43
+ Reading (Fora do laco).....          44
+ Reading (Fora do laco).....          45
+ Reading (Fora do laco).....          46
+ Reading (Fora do laco).....          47
+ Reading (Fora do laco).....          48
+ Reading (Fora do laco).....          49
+ Reading (Fora do laco).....          50
+ Reading (Fora do laco).....          51
+ Reading (Fora do laco).....          52
+ Reading (Fora do laco).....          53
+ Reading (Fora do laco).....          54
+ Reading (Fora do laco).....          55
+ Reading (Fora do laco).....          56
+ Reading (Fora do laco).....          57
+ Reading (Fora do laco).....          58
+ Reading (Fora do laco).....          59
+ Reading (Fora do laco).....          60
+ Reading (Fora do laco).....          61
+ Reading (Fora do laco).....          62
+ Reading (Fora do laco).....          63
+ Reading (Fora do laco).....          64
+ Laco encontrado.....
+ Reading.....          65
+ Reading.....          66
+ Reading.....          67
+ Reading.....          68
+ Reading.....          69
+ Reading.....          70
+ Reading.....          71
+ Reading.....          72
+ Reading.....          73
+ Reading.....          74
+ Reading.....          75
+ Reading.....          76
+ Reading.....          77
+ Reading.....          78
+ Reading.....          79
+ Reading.....          80
+ Reading.....          81
+ Reading.....          82
+ Reading.....          83
+ Reading.....          84
+ Reading.....          85
+ Reading.....          86
+ Reading.....          87
+ Reading.....          88
+ Reading.....          89
+ Reading.....          90
+ Reading.....          91
+ Reading.....          92
+ Reading.....          93
+ Reading.....          94
+ Reading.....          95
+ Reading.....          96
+ Reading.....          97
+ Reading.....          98
+ Reading.....          99
+ Reading.....         100
+ Reading.....         101
+ Reading.....         102
+ Reading.....         103
+ Reading.....         104
+ Reading.....         105
+ Reading.....         106
+ Reading.....         107
+ Reading.....         108
+ Reading.....         109
+ Reading.....         110
+ Reading.....         111
+ Reading.....         112
+ Reading.....         113
+ Reading.....         114
+ Reading.....         115
+ Reading.....         116
+ Reading.....         117
+ Reading.....         118
+ Reading.....         119
+ Reading.....         120
+ Reading.....         121
+ Reading.....         122
+ Reading.....         123
+ Reading.....         124
+ Reading.....         125
+ Reading.....         126
+ Reading.....         127
+ Reading.....         128
+ Reading.....         129
+ Reading.....         130
+ Reading.....         131
+ Reading.....         132
+ Reading.....         133
+ Reading.....         134
+ Reading.....         135
+ Reading.....         136
+ Reading.....         137
+ Reading.....         138
+ Reading.....         139
+ Reading.....         140
+ Reading.....         141
+ Reading.....         142
+ Reading.....         143
+ Reading.....         144
+ Reading.....         145
+ Reading.....         146
+ Reading.....         147
+ Reading.....         148
+ Reading.....         149
+ Reading.....         150
+ Reading.....         151
+ Reading.....         152
+ Reading.....         153
+ Reading.....         154
+ Reading.....         155
+ Reading.....         156
+ Reading.....         157
+ Reading.....         158
+ Reading.....         159
+ Reading.....         160
+ Reading.....         161
+ Reading.....         162
+ Reading.....         163
+ Reading.....         164
+ Reading.....         165
+ Reading.....         166
+ Reading.....         167
+ Reading.....         168
+ Reading.....         169
+ Reading.....         170
+ Reading.....         171
+ Reading.....         172
+ Reading.....         173
+ Reading.....         174
+ Reading.....         175
+ Reading.....         176
+ Reading.....         177
+ Reading.....         178
+ Reading.....         179
+ Reading.....         180
+ Reading.....         181
+ Reading.....         182
+ Reading.....         183
+ Reading.....         184
+ Reading.....         185
+ Reading.....         186
+ Reading.....         187
+ Reading.....         188
+ Reading.....         189
+ Reading.....         190
+ Reading.....         191
+ Reading.....         192
+ Reading.....         193
+ Reading.....         194
+ Reading.....         195
+ Reading.....         196
+ Reading.....         197
+ Reading.....         198
+ Reading.....         199
+ Reading.....         200
+ Reading.....         201
+ Reading.....         202
+ Reading.....         203
+ Reading.....         204
+ Reading.....         205
+ Reading.....         206
+ Reading.....         207
+ Reading.....         208
+ Reading.....         209
+ Reading.....         210
+ Reading.....         211
+ Reading.....         212
+ Reading.....         213
+ Reading.....         214
+ Reading.....         215
+ Reading.....         216
+ Reading.....         217
+ Reading.....         218
+ Reading.....         219
+ Reading.....         220
+ Reading.....         221
+ Reading.....         222
+ Reading.....         223
+ Reading.....         224
+ Reading.....         225
+ Reading.....         226
+ Reading.....         227
+ Reading.....         228
+ Reading.....         229
+ Reading.....         230
+ Reading.....         231
+ Reading.....         232
+ Reading.....         233
+ Reading.....         234
+ Reading.....         235
+ Reading.....         236
+ Reading.....         237
+ Reading.....         238
+ Reading.....         239
+ Reading.....         240
+ Reading.....         241
+ Reading.....         242
+ Reading.....         243
+ Reading.....         244
+ Reading.....         245
+ Reading.....         246
+ Reading.....         247
+ Reading.....         248
+ Reading.....         249
+ Reading.....         250
+ Reading.....         251
+ Reading.....         252
+ Reading.....         253
+ Reading.....         254
+ Reading.....         255
+ Reading.....         256
+ Reading.....         257
+ Reading.....         258
+ Reading.....         259
+ Reading.....         260
+ Reading.....         261
+ Reading.....         262
+ Reading.....         263
+ Reading.....         264
+ Reading.....         265
+ Reading.....         266
+ Reading.....         267
+ Reading.....         268
+ Reading.....         269
+ Reading.....         270
+ Reading.....         271
+ Reading.....         272
+ Reading.....         273
+ Reading.....         274
+ Reading.....         275
+ Reading.....         276
+ Reading.....         277
+ Reading.....         278
+ Reading.....         279
+ Reading.....         280
+ Reading.....         281
+ Reading.....         282
+ Reading.....         283
+ Reading.....         284
+ Encerrando compactacao....
+ Reading (Fora do laco).....         285
+ Reading (Fora do laco).....         286
+ Reading (Fora do laco).....         287
+ Reading (Fora do laco).....         288
+ Reading (Fora do laco).....         289
+ Reading (Fora do laco).....         290
+ Arquivo:chem_spack_fexprod.f90
+ Reading (Fora do laco).....           0
+ Reading (Fora do laco).....           1
+ Reading (Fora do laco).....           2
+ Reading (Fora do laco).....           3
+ Reading (Fora do laco).....           4
+ Reading (Fora do laco).....           5
+ Reading (Fora do laco).....           6
+ Reading (Fora do laco).....           7
+ Reading (Fora do laco).....           8
+ Reading (Fora do laco).....           9
+ Reading (Fora do laco).....          10
+ Reading (Fora do laco).....          11
+ Reading (Fora do laco).....          12
+ Reading (Fora do laco).....          13
+ Reading (Fora do laco).....          14
+ Reading (Fora do laco).....          15
+ Reading (Fora do laco).....          16
+ Reading (Fora do laco).....          17
+ Reading (Fora do laco).....          18
+ Reading (Fora do laco).....          19
+ Reading (Fora do laco).....          20
+ Reading (Fora do laco).....          21
+ Reading (Fora do laco).....          22
+ Reading (Fora do laco).....          23
+ Reading (Fora do laco).....          24
+ Reading (Fora do laco).....          25
+ Reading (Fora do laco).....          26
+ Reading (Fora do laco).....          27
+ Reading (Fora do laco).....          28
+ Reading (Fora do laco).....          29
+ Reading (Fora do laco).....          30
+ Reading (Fora do laco).....          31
+ Reading (Fora do laco).....          32
+ Reading (Fora do laco).....          33
+ Reading (Fora do laco).....          34
+ Reading (Fora do laco).....          35
+ Reading (Fora do laco).....          36
+ Reading (Fora do laco).....          37
+ Reading (Fora do laco).....          38
+ Reading (Fora do laco).....          39
+ Reading (Fora do laco).....          40
+ Reading (Fora do laco).....          41
+ Reading (Fora do laco).....          42
+ Reading (Fora do laco).....          43
+ Reading (Fora do laco).....          44
+ Reading (Fora do laco).....          45
+ Reading (Fora do laco).....          46
+ Reading (Fora do laco).....          47
+ Reading (Fora do laco).....          48
+ Reading (Fora do laco).....          49
+ Reading (Fora do laco).....          50
+ Reading (Fora do laco).....          51
+ Reading (Fora do laco).....          52
+ Reading (Fora do laco).....          53
+ Reading (Fora do laco).....          54
+ Reading (Fora do laco).....          55
+ Reading (Fora do laco).....          56
+ Reading (Fora do laco).....          57
+ Reading (Fora do laco).....          58
+ Reading (Fora do laco).....          59
+ Reading (Fora do laco).....          60
+ Reading (Fora do laco).....          61
+ Reading (Fora do laco).....          62
+ Reading (Fora do laco).....          63
+ Reading (Fora do laco).....          64
+ Laco encontrado.....
+ Reading.....          65
+ Reading.....          66
+ Reading.....          67
+ Reading.....          68
+ Reading.....          69
+ Reading.....          70
+ Reading.....          71
+ Reading.....          72
+ Reading.....          73
+ Reading.....          74
+ Reading.....          75
+ Reading.....          76
+ Reading.....          77
+ Reading.....          78
+ Reading.....          79
+ Reading.....          80
+ Reading.....          81
+ Reading.....          82
+ Reading.....          83
+ Reading.....          84
+ Reading.....          85
+ Reading.....          86
+ Reading.....          87
+ Reading.....          88
+ Reading.....          89
+ Reading.....          90
+ Reading.....          91
+ Reading.....          92
+ Reading.....          93
+ Reading.....          94
+ Reading.....          95
+ Reading.....          96
+ Reading.....          97
+ Reading.....          98
+ Reading.....          99
+ Reading.....         100
+ Reading.....         101
+ Reading.....         102
+ Reading.....         103
+ Reading.....         104
+ Reading.....         105
+ Reading.....         106
+ Reading.....         107
+ Reading.....         108
+ Reading.....         109
+ Reading.....         110
+ Reading.....         111
+ Reading.....         112
+ Reading.....         113
+ Reading.....         114
+ Reading.....         115
+ Reading.....         116
+ Reading.....         117
+ Reading.....         118
+ Reading.....         119
+ Reading.....         120
+ Reading.....         121
+ Reading.....         122
+ Reading.....         123
+ Reading.....         124
+ Reading.....         125
+ Reading.....         126
+ Reading.....         127
+ Reading.....         128
+ Reading.....         129
+ Reading.....         130
+ Reading.....         131
+ Reading.....         132
+ Reading.....         133
+ Reading.....         134
+ Reading.....         135
+ Reading.....         136
+ Reading.....         137
+ Reading.....         138
+ Reading.....         139
+ Reading.....         140
+ Reading.....         141
+ Reading.....         142
+ Reading.....         143
+ Reading.....         144
+ Reading.....         145
+ Reading.....         146
+ Reading.....         147
+ Reading.....         148
+ Reading.....         149
+ Reading.....         150
+ Reading.....         151
+ Reading.....         152
+ Reading.....         153
+ Reading.....         154
+ Reading.....         155
+ Reading.....         156
+ Reading.....         157
+ Reading.....         158
+ Reading.....         159
+ Reading.....         160
+ Reading.....         161
+ Reading.....         162
+ Reading.....         163
+ Reading.....         164
+ Reading.....         165
+ Reading.....         166
+ Reading.....         167
+ Reading.....         168
+ Reading.....         169
+ Reading.....         170
+ Reading.....         171
+ Reading.....         172
+ Reading.....         173
+ Reading.....         174
+ Reading.....         175
+ Reading.....         176
+ Reading.....         177
+ Reading.....         178
+ Reading.....         179
+ Reading.....         180
+ Reading.....         181
+ Reading.....         182
+ Reading.....         183
+ Reading.....         184
+ Reading.....         185
+ Reading.....         186
+ Reading.....         187
+ Reading.....         188
+ Reading.....         189
+ Reading.....         190
+ Reading.....         191
+ Reading.....         192
+ Reading.....         193
+ Reading.....         194
+ Reading.....         195
+ Reading.....         196
+ Reading.....         197
+ Reading.....         198
+ Reading.....         199
+ Reading.....         200
+ Reading.....         201
+ Reading.....         202
+ Reading.....         203
+ Reading.....         204
+ Reading.....         205
+ Reading.....         206
+ Reading.....         207
+ Reading.....         208
+ Reading.....         209
+ Reading.....         210
+ Reading.....         211
+ Reading.....         212
+ Reading.....         213
+ Reading.....         214
+ Reading.....         215
+ Reading.....         216
+ Reading.....         217
+ Reading.....         218
+ Reading.....         219
+ Reading.....         220
+ Reading.....         221
+ Reading.....         222
+ Reading.....         223
+ Reading.....         224
+ Reading.....         225
+ Reading.....         226
+ Reading.....         227
+ Reading.....         228
+ Reading.....         229
+ Reading.....         230
+ Reading.....         231
+ Reading.....         232
+ Reading.....         233
+ Reading.....         234
+ Reading.....         235
+ Reading.....         236
+ Reading.....         237
+ Reading.....         238
+ Reading.....         239
+ Reading.....         240
+ Reading.....         241
+ Reading.....         242
+ Reading.....         243
+ Reading.....         244
+ Reading.....         245
+ Reading.....         246
+ Reading.....         247
+ Reading.....         248
+ Reading.....         249
+ Reading.....         250
+ Reading.....         251
+ Reading.....         252
+ Reading.....         253
+ Reading.....         254
+ Reading.....         255
+ Reading.....         256
+ Reading.....         257
+ Reading.....         258
+ Reading.....         259
+ Reading.....         260
+ Reading.....         261
+ Reading.....         262
+ Reading.....         263
+ Reading.....         264
+ Reading.....         265
+ Reading.....         266
+ Reading.....         267
+ Reading.....         268
+ Reading.....         269
+ Reading.....         270
+ Reading.....         271
+ Reading.....         272
+ Reading.....         273
+ Reading.....         274
+ Reading.....         275
+ Reading.....         276
+ Reading.....         277
+ Reading.....         278
+ Reading.....         279
+ Reading.....         280
+ Reading.....         281
+ Reading.....         282
+ Reading.....         283
+ Reading.....         284
+ Reading.....         285
+ Reading.....         286
+ Reading.....         287
+ Reading.....         288
+ Reading.....         289
+ Reading.....         290
+ Reading.....         291
+ Reading.....         292
+ Reading.....         293
+ Reading.....         294
+ Reading.....         295
+ Reading.....         296
+ Reading.....         297
+ Reading.....         298
+ Reading.....         299
+ Reading.....         300
+ Reading.....         301
+ Reading.....         302
+ Reading.....         303
+ Reading.....         304
+ Reading.....         305
+ Reading.....         306
+ Reading.....         307
+ Reading.....         308
+ Reading.....         309
+ Reading.....         310
+ Reading.....         311
+ Reading.....         312
+ Reading.....         313
+ Reading.....         314
+ Reading.....         315
+ Reading.....         316
+ Reading.....         317
+ Reading.....         318
+ Reading.....         319
+ Reading.....         320
+ Reading.....         321
+ Reading.....         322
+ Reading.....         323
+ Reading.....         324
+ Reading.....         325
+ Reading.....         326
+ Reading.....         327
+ Reading.....         328
+ Reading.....         329
+ Reading.....         330
+ Reading.....         331
+ Reading.....         332
+ Reading.....         333
+ Reading.....         334
+ Reading.....         335
+ Reading.....         336
+ Reading.....         337
+ Reading.....         338
+ Reading.....         339
+ Reading.....         340
+ Reading.....         341
+ Reading.....         342
+ Reading.....         343
+ Reading.....         344
+ Reading.....         345
+ Reading.....         346
+ Reading.....         347
+ Reading.....         348
+ Reading.....         349
+ Reading.....         350
+ Reading.....         351
+ Reading.....         352
+ Reading.....         353
+ Reading.....         354
+ Reading.....         355
+ Reading.....         356
+ Reading.....         357
+ Reading.....         358
+ Reading.....         359
+ Reading.....         360
+ Reading.....         361
+ Reading.....         362
+ Reading.....         363
+ Reading.....         364
+ Reading.....         365
+ Reading.....         366
+ Reading.....         367
+ Reading.....         368
+ Reading.....         369
+ Reading.....         370
+ Reading.....         371
+ Reading.....         372
+ Reading.....         373
+ Reading.....         374
+ Reading.....         375
+ Reading.....         376
+ Reading.....         377
+ Reading.....         378
+ Reading.....         379
+ Reading.....         380
+ Reading.....         381
+ Reading.....         382
+ Reading.....         383
+ Reading.....         384
+ Reading.....         385
+ Reading.....         386
+ Reading.....         387
+ Reading.....         388
+ Reading.....         389
+ Reading.....         390
+ Reading.....         391
+ Reading.....         392
+ Reading.....         393
+ Reading.....         394
+ Reading.....         395
+ Reading.....         396
+ Reading.....         397
+ Reading.....         398
+ Reading.....         399
+ Reading.....         400
+ Reading.....         401
+ Reading.....         402
+ Reading.....         403
+ Reading.....         404
+ Reading.....         405
+ Reading.....         406
+ Reading.....         407
+ Reading.....         408
+ Reading.....         409
+ Reading.....         410
+ Reading.....         411
+ Reading.....         412
+ Reading.....         413
+ Reading.....         414
+ Reading.....         415
+ Reading.....         416
+ Reading.....         417
+ Reading.....         418
+ Reading.....         419
+ Reading.....         420
+ Reading.....         421
+ Reading.....         422
+ Reading.....         423
+ Reading.....         424
+ Reading.....         425
+ Reading.....         426
+ Reading.....         427
+ Reading.....         428
+ Reading.....         429
+ Reading.....         430
+ Reading.....         431
+ Reading.....         432
+ Reading.....         433
+ Reading.....         434
+ Reading.....         435
+ Reading.....         436
+ Reading.....         437
+ Reading.....         438
+ Reading.....         439
+ Reading.....         440
+ Reading.....         441
+ Reading.....         442
+ Reading.....         443
+ Reading.....         444
+ Reading.....         445
+ Reading.....         446
+ Reading.....         447
+ Reading.....         448
+ Encerrando compactacao....
+ Reading (Fora do laco).....         449
+ Reading (Fora do laco).....         450
+ Reading (Fora do laco).....         451
+ Reading (Fora do laco).....         452
+ Reading (Fora do laco).....         453
+ Reading (Fora do laco).....         454

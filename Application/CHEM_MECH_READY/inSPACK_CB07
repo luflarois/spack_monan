@@ -1,0 +1,11 @@
+-----------------------PHOTOLYSIS RATES (0: fix, 1: FastJ, 2: TUV)-----
+2
+-----------------------INPUT FILES----------------------------
+CHEMICAL MECHANISM
+'../Mechanism/CB07'
+---------------------------------------------------
+CHEMICAL SPECIES
+'../Mechanism/ciCB07'
+---------------------------------------------------
+FastJX Correspondence (only for Fast-Jx)
+'../Mechanism/CB07_to_FASTJX.dat'

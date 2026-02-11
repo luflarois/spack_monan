@@ -1,0 +1,261 @@
+!%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+!% File for gas-phase mechanism RACM
+!%
+!% Reference: see below.
+!%
+!% Modifications:
+!% 05/02/2003 (BS): CO2 is now omitted (only a product).
+!% 05/02/2003 (BS): bug in R34 (HO2 missing in the reactants ?).
+!% 12/02/2003 (BS/VM): inversed pre-exponential factors for RCFE.
+!% 25/06/2003 (BS): update data with TUV/RACM (in directory radiatif/)
+!%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+! **********************************************************************
+!!  FILE:        RACM1_3.mch
+!!  DATE:        21.08.1997
+!!  VERSION:     1.3
+!!  ID: RACM Version 1.3, 21.08.1997
+!!  LAST UPDATE: 21.08.1997 14:20:00
+!!  --------------------------------------------------------------------
+!!  REGIONAL ATMOSPHERIC CHEMISTRY MECHANISM  (RACM)  Version 1.3
+!!  Reference: W.R. Stockwell, F. Kirchner, M. Kuhn, and S. Seefeld, "A
+!!  New Mechanism for Regional Atmospheric Chemistry Modeling", J. of
+!!  Geophys. Res., 1997.
+!!  --------------------------------------------------------------------
+!!  FOR MORE INFORMATION REGARDING THIS MECHANISM CONTACT:
+!!  William R. Stockwell
+!!  Fraunhofer Institute for Atmospheric Environmental Research (IFU)
+!!  Kreuzeckbahnstr. 19, D-82467 Garmisch-Partenkirchen, Germany
+!!  E-MAIL:      stockwel@ifu.fhg.de
+!!  Telephone:   +(49) 8821 183-262
+!!  FAX:         +(49) 8821 73-5-73
+! **********************************************************************
+! The RACM mechanism is based upon the earlier Regional Acid Deposition
+! Model, version 2 (RADM2) mechanism.  It is intended to be valid for
+! conditions ranging from remote to polluted and from the Earth's
+! surface through the upper troposphere.  The RACM mechanism includes
+! 237 reactions and 77 species: 17 stable inorganic species, 4
+! inorganic intermediates, 32 stable organic species (4 of these are
+! primarily of biogenic origin) and 24 organic intermediates.
+! **********************************************************************
+!
+! Modifications for Version 1.1  (12.05.97)
+!
+!  059 OLT yield changed for ISO + O3P ->
+!      from 0.85 OLT + ... + 0.01  OLT to 0.86 OLT
+!
+!  071 rate parameter changed for API + HO -> APIP
+!      from  A-FACT 5.45E-11 E/R 0.0 to A-FACT 1.21E-11  E/R  -444.0
+!
+!  072 rate parameter changed for LIM + HO -> LIMP
+!      from A-FACT 1.70E-10  E/R 0.0 to A-FACT 1.71E-10 E/R     0.0
+!
+!  103 rate parameter changed for API + NO3 ->
+!      from A-FACT 6.160E-12 E/R 0.0 to A-FACT 1.19E-12 E/R -490.0
+!
+!  111 rate parameter changed for API + O3 ->
+!      from A-FACT 8.69E-17 E/R 0.0 to  A-FACT 1.01E-15 E/R 732.0
+!
+!      The changes in rate constant parameters for 071, 072, 103, 111
+!      did NOT change the value of the rate constant at 298 K
+!      significantly (difference < 1.5%).
+!
+!-----------------------------------------------------------------------
+! Modifications for Version 1.2  (28.05.97)
+!
+!  065 Extra space inserted into reaction to correct format for HKET
+!  065 HC8   HO        -> .951 HC8P   .025 ALD   .024  HKET
+!  &                      .049 HO2         H2O
+!
+!-----------------------------------------------------------------------
+! Modifications for Version 1.3  (21.08.97)
+! 
+!  018   add product: 0.15  H2  to GLY-photolysis as follows:
+!  018 GLY             -> 0.45 HCHO   1.55 CO    0.80  HO2
+!  &                      0.15 H2
+!
+!  Revised and updated references to rate constants and products
+!  to be consistent with JGR manuscript (proof read on Aug. 14, 1997)
+!
+!
+SET TABULATION 11 DEGREES 0. 10. 20. 30. 40. 50. 60. 70. 78. 86. 90.
+! R1
+NO2 -> O3P + NO
+KINETIC PHOTOLYSIS   0.931026E-02  0.921901E-02  0.890995E-02  0.837928E-02  0.760031E-02  0.652988E-02  0.510803E-02  0.329332E-02  0.174121E-02  0.511393E-03  0.163208E-03
+! R2
+O3 -> O1D + O2
+KINETIC PHOTOLYSIS   0.352348E-04  0.339820E-04  0.301078E-04  0.242445E-04  0.172587E-04  0.102977E-04  0.463950E-05  0.128749E-05  0.290804E-06  0.487557E-07  0.185350E-07
+! R3
+O3 -> O3P + O2
+KINETIC PHOTOLYSIS   0.492758E-03  0.489069E-03  0.476368E-03  0.454585E-03  0.423344E-03  0.381150E-03  0.324899E-03  0.247082E-03  0.160308E-03  0.397670E-04  0.557331E-05
+! R5
+HNO3            ->      HO    +      NO2
+KINETIC PHOTOLYSIS   0.747531E-06  0.729946E-06  0.674094E-06  0.585322E-06  0.470402E-06  0.339698E-06  0.208199E-06  0.964783E-07  0.382903E-07  0.830301E-08  0.224170E-08
+! R7
+NO3             ->      NO     +     O2
+KINETIC PHOTOLYSIS   0.265649E-01  0.264102E-01  0.258524E-01  0.249074E-01  0.235172E-01  0.215841E-01  0.188522E-01  0.147419E-01  0.971212E-02  0.225719E-02  0.250693E-03
+! R8
+NO3             ->      NO2    +     O3P
+KINETIC PHOTOLYSIS   0.212996      0.211689      0.207152      0.199076      0.187348      0.170929      0.147742      0.113042      0.718608E-01  0.162667E-01  0.252856E-02
+! R9
+H2O2            ->      HO    +      HO
+KINETIC PHOTOLYSIS   0.839458E-05  0.825592E-05  0.780494E-05  0.706032E-05  0.603528E-05  0.475883E-05  0.329698E-05  0.180604E-05  0.842157E-06  0.221356E-06  0.624535E-07
+! END GENERATION BY TUV/RACM
+!
+!
+! R24:  O3P +  O2        ->      O3
+O3P -> O3
+KINETIC TB O2 SPEC -1
+!SPECIAL RWK(#) = CM*6.00E-34*(TEMP/300)**(-2.3)
+!  --- NASA 1994
+!
+! R25:  O3P +  O3        ->  2.0 O2
+O3P +  O3 -> 
+KINETIC ARR2    8.00E-12    2060.0
+!  --- NASA 1994
+!
+! R26 (N2 as product)
+O1D       ->      O3P
+KINETIC TB N2 ARR2    1.80E-11     -110.0
+!  --- NASA 1994
+!
+! R27:  O1D +  O2        ->      O3P   + O2
+O1D -> O3P
+KINETIC TB O2 ARR2    3.20E-11      -70.0
+!  --- NASA 1994
+!
+! R28
+O1D -> 2. HO
+KINETIC TB H2O ARR2    2.20E-10        0.0
+!  --- NASA 1994
+!
+! R29:  (+ O2 as product)
+O3 +   HO        ->      HO2 
+KINETIC ARR2    1.60E-12      940.0
+!  --- NASA 1994
+!
+! R30 (+ 2.0 O2 as product)
+O3 +  HO2       ->      HO
+KINETIC ARR2    1.10E-14      500.0
+!  --- NASA 1994
+!
+! R31 (H20 + O2 as product)
+HO +   HO2       ->   
+KINETIC ARR2    4.80E-11     -250.0
+!  --- NASA 1994
+!
+! R32 (H20 as product)
+H2O2 + HO        ->      HO2
+KINETIC ARR2    2.90E-12      160.0
+!  --- NASA 1994
+!
+! R33 (O2 as product)
+HO2 +  HO2       ->      H2O2 
+KINETIC SPEC -2
+!SPECIAL RWK(#) = 2.3E-13*EXP(600./TEMP) +1.7E-33 * CM * EXP(1000./TEMP)
+!  --- NASA 1994
+!
+! R34 (O2 + H20 as product)
+! BUG in the initial version (HO2 + H20 ??? BS 05/02/2003)
+HO2 +  HO2 ->      H2O2  
+KINETIC TB H2O SPEC -3
+!SPECIAL RWK(#) = 3.22E-34 * EXP(2800./TEMP)+2.38E-54*CM*EXP(3200./TEMP)
+!  --- NASA 1994
+!
+! R35
+O3P +  NO        ->      NO2
+KINETIC TROE4  9.00E-32  1.5   3.00E-11   0.0
+!  --- NASA 1994
+!
+! R36 (O2 as product)
+O3P +  NO2       ->      NO  
+KINETIC ARR2    6.50E-12     -120.0
+!  --- NASA 1994
+!
+! R37
+O3P +  NO2       ->      NO3
+KINETIC TROE4  9.00E-32  2.0  2.20E-11  0.0
+!  --- NASA 1994
+!
+! R39
+HO +   NO2       ->      HNO3
+KINETIC TROE4  2.60E-30   3.2   2.40E-11   1.3
+!  --- NASA 1994
+!
+! R40
+HO +   NO3       ->      NO2   +      HO2
+KINETIC ARR1    2.20E-11   
+!  --- NASA 1994
+!
+! R41
+HO2 +  NO        ->      NO2   +      HO
+KINETIC ARR2    3.70E-12     -250.0
+!  --- NASA 1994
+!
+! R44
+HO2 +  NO3       ->  0.3 HNO3 +   0.7 NO2 +   0.7  HO
+KINETIC ARR1    3.50E-12       
+!  --- NASA 1994
+!
+! R46 (H2O as product)
+HO +   HNO3      ->      NO3
+KINETIC SPEC -4
+!SPECIAL TMP0 = 7.2E-15*EXP(785/TEMP)
+!SPECIAL TMP2 = 4.1E-16*EXP(1440/TEMP)
+!SPECIAL TMP3 = 1.9E-33*EXP(725/TEMP)*CM
+!SPECIAL RWK(#) = TMP0 + TMP3/(1+TMP3/TMP2)
+! --- NASA 1994
+! PRODUCTS USELMAN ET AL. IN NITROGENEOUS AIR POLLUTANTS
+! CHEMICAL AND BIOLOGICAL IMPLICATIONS
+!
+! R48 (O2 as product)
+O3 +   NO        ->      NO2  
+KINETIC ARR2    2.00E-12     1400.0
+!  --- NASA 1994
+!
+! R49 (O2 as product)
+O3  +  NO2       ->      NO3 
+KINETIC ARR2    1.20E-13     2450.0
+!  --- NASA 1994
+!
+! R50
+NO  +  NO  ->      NO2    +     NO2
+KINETIC TB O2 ARR2    3.30E-39     -530.0
+!  --- ATKINSON 1992
+!
+! R51
+NO3 +  NO        ->      NO2    +     NO2
+KINETIC ARR2    1.50E-11     -170.0
+!  --- NASA 1994
+!
+! R52 (O2 as product)
+NO3 +  NO2       ->      NO    +      NO2 
+KINETIC ARR2    4.50E-14        1260.0
+!  --- NASA 1994
+!
+! R53
+NO3 +  NO2       ->      N2O5
+KINETIC TROE4   2.20E-30  3.9   1.50E-12   0.7
+!  --- NASA 1994
+!
+! R54
+N2O5            ->      NO2    +     NO3
+KINETIC RCFE 2.20E-30  3.9  1.50E-12  0.7   3.70D26    11000.0
+!  --- NASA 1994
+!
+! R55 (O2 as product)
+NO3 +  NO3       ->      NO2    +     NO2  
+KINETIC ARR2    8.50E-13    2450.0
+!  --- NASA 1994
+!
+! R56 (H2O as product)
+HO  ->  HO2
+KINETIC TB H2 ARR2    5.50E-12    2000.0
+!  --- NASA 1994
+!
+! R58 (BE CAREFUL: CO2 is a product BS 05/02/2003)
+CO  +  HO        ->      HO2 
+KINETIC SPEC -5
+!SPECIAL  RWK(#) = 1.5E-13 * (1. + 2.439E-20 * CM)
+! END OF MECHANISM
+END
+

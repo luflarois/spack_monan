@@ -1,0 +1,30 @@
+# Convert from HEVATR to FASTJX
+#-----------------------------------------------------------------------------
+#reaction! number ! factor  ! name    ! factor  ! name    ! factor  ! name
+#        !of terms!         ! fastjx  ! 	! fastjx  !	    ! fastjx
+#-----------------------------------------------------------------------------
+1        1          1.       NO2
+2        1          1.       O3(1D)
+3        1          1.       O3
+4        1          1.       HNO2
+5        1          1.       HNO3
+6        1          1.       HNO4
+7        1          0.1      NO3
+8        1          0.9      NO3
+9        1          1.       H2O2
+10       1          1.       H2COb
+11       1          1.       H2COa
+12       1          1.       CH3OOH
+13       1          1.       ClNO3a
+14       1          1.       ClNO3b
+15       1          1.       Cl2O2
+16       1          1.       Cl2
+17       1          1.       BrO
+18       1          1.       BrNO3
+19       1          1.       HOBr
+
+
+ 
+ 
+ 
+ 

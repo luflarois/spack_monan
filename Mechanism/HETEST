@@ -1,0 +1,489 @@
+!%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+!Chemical scheme HOx, NOx, CO, CH4,H2, O3 for the CO project
+!from RACM (Stockwell et al., JGR, 1997)
+!M.Pirre September 2009
+!***************************************************
+SET TABULATION 11 DEGREES 0. 10. 20. 30. 40. 50. 60. 70. 78. 86. 90.
+! R1
+NO2 -> O3P + NO
+KINETIC PHOTOLYSIS   0.931026E-02  0.921901E-02  0.890995E-02  0.837928E-02  0.760031E-02  0.652988E-02  0.510803E-02  0.329332E-02  0.174121E-02  0.511393E-03  0.163208E-03
+! R2
+O3 -> O1D + O2
+KINETIC PHOTOLYSIS   0.352348E-04  0.339820E-04  0.301078E-04  0.242445E-04  0.172587E-04  0.102977E-04  0.463950E-05  0.128749E-05  0.290804E-06  0.487557E-07  0.185350E-07
+! R3
+O3 -> O3P + O2
+KINETIC PHOTOLYSIS   0.492758E-03  0.489069E-03  0.476368E-03  0.454585E-03  0.423344E-03  0.381150E-03  0.324899E-03  0.247082E-03  0.160308E-03  0.397670E-04  0.557331E-05
+! R4
+HONO            ->      HO   +       NO
+KINETIC PHOTOLYSIS   0.204671E-02  0.202572E-02  0.195491E-02  0.183337E-02  0.165516E-02  0.141113E-02  0.109002E-02  0.689444E-03  0.361035E-03  0.108950E-03  0.346516E-04
+! R5
+HNO3            ->      HO    +      NO2
+KINETIC PHOTOLYSIS   0.747531E-06  0.729946E-06  0.674094E-06  0.585322E-06  0.470402E-06  0.339698E-06  0.208199E-06  0.964783E-07  0.382903E-07  0.830301E-08  0.224170E-08
+! R6
+HNO4            ->     HO2   +     NO2 
+KINETIC PHOTOLYSIS   0.503836E-05  0.492337E-05  0.455701E-05  0.397119E-05  0.320567E-05  0.232384E-05  0.142322E-05  0.648606E-06  0.246502E-06  0.469613E-07  0.118499E-07
+! R7
+NO3             ->      NO     +     O2
+KINETIC PHOTOLYSIS   0.265649E-01  0.264102E-01  0.258524E-01  0.249074E-01  0.235172E-01  0.215841E-01  0.188522E-01  0.147419E-01  0.971212E-02  0.225719E-02  0.250693E-03
+! R8
+NO3             ->      NO2    +     O3P
+KINETIC PHOTOLYSIS   0.212996      0.211689      0.207152      0.199076      0.187348      0.170929      0.147742      0.113042      0.718608E-01  0.162667E-01  0.252856E-02
+! R9
+H2O2            ->      HO    +      HO
+KINETIC PHOTOLYSIS   0.839458E-05  0.825592E-05  0.780494E-05  0.706032E-05  0.603528E-05  0.475883E-05  0.329698E-05  0.180604E-05  0.842157E-06  0.221356E-06  0.624535E-07
+! R10
+HCHO            ->      H2   +       CO
+KINETIC PHOTOLYSIS   0.466946E-04  0.460643E-04  0.439841E-04  0.404765E-04  0.354845E-04  0.289656E-04  0.210065E-04  0.121895E-04  0.597941E-05  0.166295E-05  0.476221E-06
+! R11
+HCHO            ->      HO2  +  HO2  +  CO
+KINETIC PHOTOLYSIS   0.322056E-04  0.316290E-04  0.297592E-04  0.266797E-04  0.224649E-04  0.172798E-04  0.114907E-04  0.587024E-05  0.250654E-05  0.553383E-06  0.139443E-06
+! R13
+OP1             ->      HCHO  +  HO2  +  HO
+KINETIC PHOTOLYSIS   0.570462E-05  0.561354E-05  0.531667E-05  0.482525E-05  0.414587E-05  0.329411E-05  0.230820E-05  0.128524E-05  0.608525E-06  0.163756E-06  0.471643E-07
+!
+!
+! REACTION HEVA : HX
+!
+!
+! H1
+CLN3          ->      CL  +  NO3
+KINETIC PHOTOLYSIS   0.570462E-05  0.561354E-05  0.531667E-05  0.482525E-05  0.414587E-05  0.329411E-05  0.230820E-05  0.128524E-05  0.608525E-06  0.163756E-06  0.471643E-07
+!
+! H2
+CLN3         ->      CLO   +  NO2
+KINETIC PHOTOLYSIS   0.570462E-05  0.561354E-05  0.531667E-05  0.482525E-05  0.414587E-05  0.329411E-05  0.230820E-05  0.128524E-05  0.608525E-06  0.163756E-06  0.471643E-07
+!
+! H3 (+O2 product)
+CLO2          ->     CL + CL
+KINETIC PHOTOLYSIS   0.           0.              0.           0.            0.             0.            0.            0.                   0.            0.
+!
+! H4
+CL2           ->     CL + CL
+KINETIC PHOTOLYSIS   0.570462E-05  0.561354E-05  0.531667E-05  0.482525E-05  0.414587E-05  0.329411E-05  0.230820E-05  0.128524E-05  0.608525E-06  0.163756E-06  0.471643E-07
+!
+! H5
+BRO         ->     BR + O3P
+KINETIC PHOTOLYSIS   0.           0.              0.           0.            0.             0.            0.            0.                   0.            0.
+!
+! H6
+BRN3      ->     BR + NO3
+KINETIC PHOTOLYSIS   0.570462E-05  0.561354E-05  0.531667E-05  0.482525E-05  0.414587E-05  0.329411E-05  0.230820E-05  0.128524E-05  0.608525E-06  0.163756E-06  0.471643E-07
+!
+! H7
+HOBR        ->     BR + HO
+KINETIC PHOTOLYSIS   0.           0.              0.           0.            0.             0.            0.            0.                   0.            0.
+!
+! H8
+!HOCL            ->      CL    +  HO
+!KINETIC PHOTOLYSIS   0.           0.              0.           0.            0.             0.            0.            0.                    0.            0.
+!
+! H9
+!HCL           ->      HO2 + CL
+!KINETIC PHOTOLYSIS   0.           0.              0.           0.            0.             0.            0.            0.                    0.            0.
+!
+! H10
+!CLN2        ->     CL + NO2
+!KINETIC PHOTOLYSIS   1.           0.              0.           0.            0.             0.            0.            0.                    0.            0.
+!
+! H11
+!OCLO        ->     O3P + CLO
+!KINETIC PHOTOLYSIS   0.           0.              0.           0.            0.             0.            0.            0.                    0.            0.
+!
+! H12
+!BRCL       ->      BR + CL
+!KINETIC PHOTOLYSIS   0.           0.              0.           0.            0.             0.            0.            0.                    0.            0.
+!
+!
+! END GENERATION BY TUV/RACM
+!
+!
+! R24:  O3P +  O2        ->      O3
+O3P -> O3
+KINETIC TB O2 SPEC -1
+!SPECIAL RWK(#) = CM*6.00E-34*(TEMP/300)**(-2.3)
+!  --- NASA 1994
+!
+! R25:  O3P +  O3        ->  2.0 O2
+O3P +  O3 -> 
+KINETIC ARR2    8.00E-12    2060.0
+!  --- NASA 1994
+!
+! R26 (N2 as product)
+O1D       ->      O3P
+KINETIC TB N2 ARR2    1.80E-11     -110.0
+!  --- NASA 1994
+!
+! R27:  O1D +  O2        ->      O3P   + O2
+O1D -> O3P
+KINETIC TB O2 ARR2    3.20E-11      -70.0
+!  --- NASA 1994
+!
+! R28
+O1D -> 2. HO
+KINETIC TB H2O ARR2    2.20E-10        0.0
+!  --- NASA 1994
+!
+! R28b
+O1D +  H2  ->  HO +  HO2
+KINETIC ARR1    1.10E-10        0.0
+!  --- NASA 2006
+!
+! R29:  (+ O2 as product)
+O3 +   HO        ->      HO2 
+KINETIC ARR2    1.60E-12      940.0
+!  --- NASA 1994
+!
+! R30 (+ 2.0 O2 as product)
+O3 +  HO2       ->      HO
+KINETIC ARR2    1.10E-14      500.0
+!  --- NASA 1994
+!
+! R31 (H20 + O2 as product)
+HO +   HO2       ->   
+KINETIC ARR2    4.80E-11     -250.0
+!  --- NASA 1994
+!
+! R32 (H20 as product)
+H2O2 + HO        ->      HO2
+KINETIC ARR2    2.90E-12      160.0
+!  --- NASA 1994
+!
+! R33 (O2 as product)
+HO2 +  HO2       ->      H2O2 
+KINETIC SPEC -2
+!SPECIAL RWK(#) = 2.3E-13*EXP(600./TEMP) +1.7E-33 * CM * EXP(1000./TEMP)
+!  --- NASA 1994
+!
+! R34 (O2 + H20 as product)
+! BUG in the initial version (HO2 + H20 ??? BS 05/02/2003)
+HO2 +  HO2 ->      H2O2  
+KINETIC TB H2O SPEC -3
+!SPECIAL RWK(#) = 3.22E-34 * EXP(2800./TEMP)+2.38E-54*CM*EXP(3200./TEMP)
+!  --- NASA 1994
+!
+! R35
+O3P +  NO        ->      NO2
+KINETIC TROE4  9.00E-32  1.5   3.00E-11   0.0
+!  --- NASA 1994
+!
+! R36 (O2 as product)
+O3P +  NO2       ->      NO  
+KINETIC ARR2    6.50E-12     -120.0
+!  --- NASA 1994
+!
+! R37
+O3P +  NO2       ->      NO3
+KINETIC TROE4  9.00E-32  2.0  2.20E-11  0.0
+!  --- NASA 1994
+!
+! R38
+HO +  NO        ->      HONO
+KINETIC TROE4  7.00E-31  2.6   1.50E-11   0.5
+!  --- NASA 1994
+!
+! R39
+HO +   NO2       ->      HNO3
+KINETIC TROE4  2.60E-30   3.2   2.40E-11   1.3
+!  --- NASA 1994
+!
+! R40
+HO +   NO3       ->      NO2   +      HO2
+KINETIC ARR1    2.20E-11   
+!  --- NASA 1994
+!
+! R41
+HO2 +  NO        ->      NO2   +      HO
+KINETIC ARR2    3.70E-12     -250.0
+!  --- NASA 1994
+!
+! R42
+HO2 +  NO2       ->      HNO4
+KINETIC TROE4  1.80E-31   3.2   4.70E-12  1.4
+!  --- NASA 1994
+!
+! R43
+HNO4            ->      HO2   +      NO2
+KINETIC RCFE 1.80E-31  3.2  4.70E-12  1.4  4.76D26  10900.
+!  --- NASA 1994
+!
+! R44
+HO2 +  NO3       ->  0.3 HNO3 +   0.7 NO2 +   0.7  HO
+KINETIC ARR1    3.50E-12       
+! --- RATE CONSTANT NASA 1994
+! PRODUCTS COMBINATION OF SEVERAL MEASUREMENTS
+!
+! R45 (H2O as product)
+HO  +  HONO      ->  NO2
+KINETIC ARR2    1.80E-11     390.0
+!  --- NASA 1994
+!
+! R46 (H2O as product)
+HO +   HNO3      ->      NO3
+KINETIC SPEC -4
+!SPECIAL TMP0 = 7.2E-15*EXP(785/TEMP)
+!SPECIAL TMP2 = 4.1E-16*EXP(1440/TEMP)
+!SPECIAL TMP3 = 1.9E-33*EXP(725/TEMP)*CM
+!SPECIAL RWK(#) = TMP0 + TMP3/(1+TMP3/TMP2)
+!  --- NASA 1994
+!
+! R47 (O2 + H2O as product)
+HO +   HNO4      ->      NO2   
+KINETIC ARR2    1.30E-12     -380.0
+! --- NASA 1994
+! PRODUCTS USELMAN ET AL. IN NITROGENEOUS AIR POLLUTANTS
+! CHEMICAL AND BIOLOGICAL IMPLICATIONS
+!
+! R48 (O2 as product)
+O3 +   NO        ->      NO2  
+KINETIC ARR2    2.00E-12     1400.0
+!  --- NASA 1994
+!
+! R49 (O2 as product)
+O3  +  NO2       ->      NO3 
+KINETIC ARR2    1.20E-13     2450.0
+!  --- NASA 1994
+!
+! R50
+NO  +  NO  ->      NO2    +     NO2
+KINETIC TB O2 ARR2    3.30E-39     -530.0
+!  --- ATKINSON 1992
+!
+! R51
+NO3 +  NO        ->      NO2    +     NO2
+KINETIC ARR2    1.50E-11     -170.0
+!  --- NASA 1994
+!
+! R52 (O2 as product)
+NO3 +  NO2       ->      NO    +      NO2 
+KINETIC ARR2    4.50E-14        1260.0
+!  --- NASA 1994
+!
+! R53
+NO3 +  NO2       ->      N2O5
+KINETIC TROE4   2.20E-30  3.9   1.50E-12   0.7
+!  --- NASA 1994
+!
+! R54
+N2O5            ->      NO2    +     NO3
+KINETIC RCFE 2.20E-30  3.9  1.50E-12  0.7   3.70D26    11000.0
+!  --- NASA 1994
+!
+! R55 (O2 as product)
+NO3 +  NO3       ->      NO2    +     NO2  
+KINETIC ARR2    8.50E-13    2450.0
+!  --- NASA 1994
+!
+! R56 (H2O as product)
+HO + H2 ->  HO2 
+KINETIC ARR2    2.80E-12    1800.0
+!  ---  NASA 2006
+!
+! R58 (BE CAREFUL: CO2 is a product BS 05/02/2003)
+CO  +  HO        ->      HO2 
+KINETIC SPEC -5
+!SPECIAL  RWK(#) = 1.5E-13 * (1. + 2.439E-20 * CM)
+!  --- NASA 1994
+!
+! R61 (H2O as product)
+CH4 +  HO        ->      MO2 
+KINETIC ARR3    7.44E-18  2.  1361.
+!  --- ATKINSON 1994
+!
+! R76 (H2O as product)
+HCHO + HO        ->      HO2    +     CO
+KINETIC ARR1    1.00E-11     
+!  --- NASA 1994
+!
+! R85
+OP1 +  HO        -> .65  MO2 +   .35  HCHO +  0.35  HO
+KINETIC ARR2    2.93E-12    -190.0
+!  --- ATKINSON 1994
+!
+! R91
+HCHO + NO3 -> HO2 + HNO3 + CO
+KINETIC ARR2    3.40E-13    1900.0
+! --- RATE CONSTANT NASA 1994
+!  FROM ALD + NO3
+!
+! R131
+MO2 +  NO        ->      HCHO   +     HO2      +   NO2
+KINETIC ARR2    4.20E-12    -180.0
+!  --- NASA 1994
+!
+! R150
+MO2 + HO2 -> OP1
+KINETIC ARR2    3.80E-13   -800.0
+!  --- NASA 1994
+!
+! R171
+MO2 +  MO2 -> 1.33 HCHO +  0.66 HO2
+KINETIC ARR2    9.10E-14    -416.0
+! --- RATE CONSTANT AS MO2 + MO2, LIGHTFOOT 1992
+! 33% RO + 67% ROH LIGHTFOOT 1992
+!
+! R213
+MO2 +  NO3       ->      HCHO  +      HO2  +       NO2
+KINETIC ARR1    1.20E-12  
+!  --- KIRCHNER AND STOCKWELL, 1996
+!
+! Chlorine
+!
+! H13
+HCHO + CL   ->   HO2 + CO + HCL
+KINETIC ARR2    8.1E-11    30
+!
+!H14 (+O2 as product)
+MO2  +  CLO  ->  HCHO + NO2 + CL
+KINETIC ARR2   3.3E-12   115
+!
+! H15 (+O2 as product)
+CL + O3   ->  CLO
+KINETIC ARR2   2.9E-11   260
+!
+! H16
+CLO  + NO   ->   CL + NO2
+KINETIC ARR2   6.4E-12   -290
+!
+! H17 (+O2 as product)
+CLO + O3P   ->  CL
+KINETIC ARR2   2.9E-11   260
+!
+!  H17
+CL + CH4   ->  HCL + MO2
+KINETIC ARR2   1.1E-11     1400
+!
+! H18 (+H2 reactif)
+CL   ->    HCL  + H
+KINETIC TB H2 ARR2   3.7e-11   2300
+!
+! H19 (+O2 as product)
+CL  + HO2   ->   HCL
+KINETIC ARR2   1.8E-11    -170
+!
+! H20
+CL + HO2   ->   HO   +   CLO
+KINETIC ARR2    4.1E-11    450
+!
+! H21
+CLO + HO   ->    CL + HO2
+KINETIC ARR2   1.01E-11   -120
+!
+! H22 (+O2 as product)
+CLO + HO   ->   HCL
+KINETIC ARR2  0.88E-12   -120
+!
+! H23 (+H2O as product)
+HO + HCL   ->    CL
+KINETIC ARR2   2.6E-12    350
+!
+! H24
+CLO + NO2   ->    CLN3
+KINETIC TROE4    1.80E-31   3.4   1.5E-11   1.9
+!
+! H25 (+O2 product)
+CLO + HO2   ->   HOCL
+KINETIC ARR2   4.8E-13   -700
+!
+! H26 (+H2O product)
+HO + HOCL   ->   CLO
+KINETIC ARR2   3.0E-12   500
+!
+! H27
+O3P + HOCL   ->   HO + CLO
+KINETIC ARR1   1.7E-13
+!
+! H28
+!CL + NO2   -> CLN2
+!KINETIC TROE4   1.80E-31   2.0   1.00E-10   1.0
+!
+! H29
+CL + HOCL   ->   HO + CL2
+KINETIC ARR2   2.5E-12   130
+!
+! H30
+CLO + CLO   ->   CLO2
+KINETIC TROE4   2.20E-32   3.1   3.50E-12   1.0
+!
+! H31
+CLO2   ->   CLO + CLO
+KINETIC RCFE  2.20E-32  3.1  3.50E-12  1.0  7.69E26   8744.
+!
+!H32 (+O2 product)
+CLO + CLO   ->   CL2
+KINETIC ARR2   1.0E-12   1590
+!
+! H33 (+O2 product)
+CLO + CLO   ->   CL2
+KINETIC ARR2   3.0E-11   2450
+!
+! H34
+O3P + CLN3   ->   CLO + NO3
+KINETIC ARR2   2.9E-12   800
+!
+! H35
+!BRO + CLO   ->   OCLO + BR
+!KINETIC ARR2   1.6E-12   -430
+!
+! H36  (+O2 product)
+!BRO + CLO   ->   BR + CL
+!KINETIC ARR2   2.9E-12   -220
+!
+! H37 (+O2 product)
+!BRO + CLO   ->   BRCL
+!KINETIC ARR2   5.8E-13   -170
+!
+!
+! Bromine
+!
+!
+! H38
+HCHO + BR   ->  HO2 + CO + HBR
+KINETIC ARR2    1.7E-11   800
+!
+! H39 (+O2 product)
+BR + O3   ->   BRO
+KINETIC ARR2   1.7E-11   800
+!
+! H40 (+O2 product)
+BRO + O3P   ->   BR
+KINETIC ARR2   1.9E-11   -230
+!
+! H41
+BRO + NO   ->   NO2 + BR
+KINETIC ARR2   8.8E-12   -260
+!
+! H42 (+O2 product)
+BRO + BRO   ->   BR + BR
+KINETIC ARR2   1.5E-12   -230
+!
+! H43 (+O2 product)
+BR + HO2   -> HBR
+KINETIC ARR2   1.5E-11   600
+!
+! H44
+O1D + HBR   ->   HO   + BR
+KINETIC ARR1   1.5E-10
+!
+! H45
+BRO + HO   -> BR + HO2
+KINETIC ARR1   1.0E-11
+!
+! H46 (+H2O product)
+HO + HBR   ->   BR
+KINETIC ARR1   1.1E-11
+!
+! H47
+BRO + NO2   ->   BRN3
+KINETIC TROE4    5.20E-31   3.2   6.90E-12   2.9
+!
+! H48 (+O2 product)
+BRO + HO2   ->   HOBR
+KINETIC ARR2   3.4E-12   -540
+!
+! H49
+HOBR + O3P   ->   HO + BRO
+KINETIC ARR2   1.2E-10   430
+!
+! END OF MECHANISM
+END
+
