@@ -6,19 +6,22 @@ echo $CHEM_MECH
 cp -f CHEM_MECH_READY/inSPACK_$CHEM_MECH inSPACK
 
 
-mkdir $CHEM_MECH
+mkdir -p $CHEM_MECH
 # run SPACK to create fortran routines to compile with ccatt-brams core
 
 rm -f non_zero.dat  *.f90* *.log *.mod *.o
-SPACK > spack.log
+./bin/spack_monan > spack.log
+
 
 # run convert program to rewrite spack routines for optimization
+cp $CHEM_MECH/chem1_list.f90 ../Post-OPT
 cd ../Post-OPT
-Make_post
+make
 cp post.x ../Application
 cd ../Application
 
-post.x > post.log
+echo $PWD
+./post.x > post.log
 
 
 # rename the files for compilation
