@@ -41,16 +41,23 @@ program main
    !------------------------------------------------------------------------
    use ModParametre, only: nespmax
    use ModInit, only: lectdata
+   use ModMonan, only: create_monan_registry
                 
    implicit none
    
    double precision, dimension(nespmax) :: y0
-   integer :: neq, indicaq
+   integer :: neq, indicaq, is_monan
 
 
    !     Initialization of data
    !     NEQ has the right dimension.
-   call lectdata(y0, neq, indicaq)
+   call lectdata(y0, neq, indicaq, is_monan)
+   if (is_monan == 1) then
+      print *, 'MONAN includes will be generated.'
+      call create_monan_registry()
+   else
+      print *, 'MONAN includes will NOT be generated.'
+   end if
 
 end program main
 

@@ -3,12 +3,16 @@ module ModInit
     !Author: rodrigues, l.f. 
     !email: luflarois@gmail.com
     !Date: 2026Jan09
+    use ModParametre
     implicit none
+
+    character, dimension(nespmax) :: cdry, cwet, coff, cfdd, ctra
+    character :: csou(nespmax)
     
     contains
 
 
-    subroutine lectdata(y0, neq, indicaq)
+    subroutine lectdata(y0, neq, indicaq, is_monan)
         !------------------------------------------------------------------------
 
         !     -- DESCRIPTION
@@ -62,6 +66,7 @@ module ModInit
         double precision, intent(in out) :: y0(nespmax)
         integer, intent(out) :: neq
         integer, intent(out) :: indicaq
+        integer, intent(out) :: is_monan
         integer :: ntuvonline
         character (len = 20) :: fd
         character(len = 100) :: filename
@@ -109,6 +114,13 @@ module ModInit
         read(nmaster, *)
         read(nmaster, *) filename !To FastJX
         print *, 'FastJx adapter Mechanism: ', filename
+
+      !Incluindo se é ou não para gerar os includes do MONAN
+      read(nmaster, *)
+      read(nmaster, *)
+      read(nmaster, *) is_monan
+
+
 
         close(nmaster)
         !     Chemical species
@@ -447,7 +459,6 @@ module ModInit
        !     MOT: array composed of the words in CHDON.
        !     IMOT: array of sizes for words of MOT.
        !     NMOT: number of words.
-       use ModParametre
        use ModFiccom, only: nom, indaq, inom, nesp
        use ModAuxnom, only: nom_aux, chemical_mechanism, nblanc
        use ModGestion, only: part
@@ -459,8 +470,6 @@ module ModInit
        character(len=3) , dimension(nespmax)  :: f0, difrat, mat_eq
        character(len=2) , dimension(nespmax)  :: uv_eq
        character(len=1) , dimension(nespmax)  :: aer_eq
-       character, dimension(nespmax) :: cdry, cwet, coff, cfdd, ctra
-       character :: csou(nespmax)
        character(len=20), dimension(nespmax) :: hstar
        character(len=13), dimension(nespmax) :: dvj, dhr
        character(len=12), dimension(nespmax) :: ak0
@@ -473,7 +482,7 @@ module ModInit
        integer, dimension(nbmot) :: imot
        integer :: ii, ia, ie, imp, k, nmot
        logical :: donthaveco2 = .true.
-
+ 
        imp = 6
        !     Loop for reading the input file.
 
@@ -502,6 +511,7 @@ module ModInit
           call part(chdon, mot, imot, nmot, nblanc)
           indaq(ie) = 0
           nom(ie) (1:imot(1)) = mot(1) (1:imot(1))
+          print *, 'LFR: ie,nom(ie)=', ie,nom(ie)
           nom_aux(ie) = nom(ie)
           !LFR
           !LSPR

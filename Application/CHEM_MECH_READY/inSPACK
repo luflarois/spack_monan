@@ -9,3 +9,6 @@ CHEMICAL SPECIES
 ---------------------------------------------------
 FastJX Correspondence
 '../Mechanism/RACM_to_FASTJX.dat'
+---------------------------------------------------
+Monan (1= yes, 0=no)
+1

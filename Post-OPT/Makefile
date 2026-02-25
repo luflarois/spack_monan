@@ -1,7 +1,7 @@
 # Makefile para compilar post.x a partir de chem1_list.f90 e post.f90
 # Compilador e flags
 FC = gfortran
-FFLAGS = -O2 -Wall -fallow-argument-mismatch
+FFLAGS = -O2 -Wall -fbacktrace -fallow-argument-mismatch
 # Para debug, descomente a linha abaixo:
 # FFLAGS = -g -Wall -fbounds-check
 
